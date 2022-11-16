@@ -113,7 +113,6 @@ body {
 	font-weight: 400;
 	font-size: 26px;
 	line-height: 32px;
-	max-width: 100vw;
 }
 a {
 	text-decoration: none;
@@ -240,7 +239,9 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	width: 100%;
 }
+
 .main_middle h2{
 	font-family: poiret;
 	font-style: normal;
@@ -250,8 +251,11 @@ header {
 	color: #4B6049;
 	padding: 78px 0 0 0;
 }
-.main_middle > div:first-of-type {
+.main_middle .wrapper {
 	max-width: 1488px;
+}
+.main_middle > div{
+	display: flex;
 }
 .main_middle p {
 	font-size: 40px;
@@ -303,5 +307,5 @@ header {
 .bottom_view_content_item {
 	display: flex;
 	height: fit-content;
-	
+
 }
