@@ -146,11 +146,9 @@ header{
    padding: 0 15px;
    box-sizing: content-box;
    position: relative;
-	
 }
 
 .header_content{
-	
 	height: fit-content;
 	max-height: 144px;
 	display: flex;
@@ -199,6 +197,9 @@ header{
 	position: absolute;
 	display: block;
 	z-index: -1;
+}
+.main_top_view .wrapper{
+	width: 100%;
 }
 .top_section_content h2{
 	max-width: 552px;
