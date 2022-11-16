@@ -113,7 +113,7 @@ body {
 	font-weight: 400;
 	font-size: 26px;
 	line-height: 32px;
-	min-width: 100%;
+	max-width: 100vw;
 }
 a {
 	text-decoration: none;
@@ -126,9 +126,6 @@ font-weight: 400;
 font-size: 60px;
 line-height: 70px;
 color: #484847;
-}
-header{
-	width: 100%;
 }
 /* ======================================================================================*/
 .flip-it {
@@ -146,6 +143,7 @@ header{
    padding: 0 15px;
    box-sizing: content-box;
    position: relative;
+	width: 100%;
 }
 
 .header_content{
@@ -187,6 +185,9 @@ header{
 	align-items: center;
 	min-width: 100%;
 }
+header {
+	display: flex;
+}
 .main_top_view_img{
 	background: url('./img/main_top_section_background.png') right no-repeat;
 	min-height: 804px;
@@ -197,9 +198,6 @@ header{
 	position: absolute;
 	display: block;
 	z-index: -1;
-}
-.main_top_view .wrapper{
-	width: 100%;
 }
 .top_section_content h2{
 	max-width: 552px;
@@ -254,10 +252,6 @@ header{
 }
 .main_middle > div:first-of-type {
 	max-width: 1488px;
-   margin: 0 auto;
-   padding: 0 15px;
-   box-sizing: content-box;
-	width: 100%;
 }
 .main_middle p {
 	font-size: 40px;
