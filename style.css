@@ -86,6 +86,12 @@ video {
    vertical-align: baseline;
    background: transparent;
 }
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -255,8 +261,8 @@ header {
 }
 
 .regular_button::after {
-	width: 219px;
-	height: 59px;
+	width: 216px;
+	height: 56px;
 	border: 1.5px solid #484847;
 	position: absolute;
 	margin: 0 0 12px 12px;
@@ -549,4 +555,19 @@ footer{
 }
 .footer_pay a:nth-of-type(3):hover {
 	background: url('./img/Pay_3.png') no-repeat;
+}
+.scrollToTop{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right: 8vw;
+	bottom: 2vh;
+	background: rgba(75, 96, 73, 0.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	transition-property: visibility opacity;
+	transition-duration: 0.8s;
+	cursor: pointer;
 }
