@@ -411,6 +411,34 @@ footer{
 	padding-bottom: 8px;
 	height: fit-content;
 }
+.footer_social_white a {
+	width: 50px;
+	height: 50px;
+}
+.footer_social_white a:nth-of-type(1){
+	background: url('./img/instagram.svg') no-repeat;
+}
+.footer_social_white a:nth-of-type(1):hover{
+	background: url('./img/instagram_hover.svg') no-repeat;
+}
+.footer_social_white a:nth-of-type(2){
+	background: url('./img/email.svg') no-repeat;
+}
+.footer_social_white a:nth-of-type(2):hover{
+	background: url('./img/email_hover.svg') no-repeat;
+}
+.footer_social_white a:nth-of-type(3){
+	background: url('./img/phone.svg') no-repeat;
+}
+.footer_social_white a:nth-of-type(3):hover{
+	background: url('./img/phone_hover.svg') no-repeat;
+}
+.footer_social_white a:nth-of-type(4){
+	background: url('./img/address.svg') no-repeat;
+}
+.footer_social_white a:nth-of-type(4):hover{
+	background: url('./img/location_hover.svg') no-repeat;
+}
 .footer_content {
 	background-color: #4B6049;
 	height: 192px;
