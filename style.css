@@ -413,7 +413,7 @@ footer{
 }
 .footer_content {
 	background-color: #4B6049;
-	min-height: 192px;
+	height: 192px;
 	width: 100%;
 }
 .footer_content .wrapper {
@@ -421,4 +421,57 @@ footer{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+.footer_item_group{
+	font-family: 'Candara';
+	font-weight: 200;
+	font-size: 20px;
+	line-height: 150%;
+	color: #FFFBF5;
+	display: flex;
+	gap: 40px;
+	padding: 26px 0 0 0;
+}
+.footer_item:nth-of-type(2) {
+	padding: 0 12px 0 0;
+}
+.footer_item:last-child{
+	display: flex;
+	flex-direction: column;
+}
+.footer_item > div:first-of-type{
+	display: flex;
+	flex-direction: column;
+}
+.footer_item > div:nth-of-type(2){
+	padding: 14px 0 0 56px;
+}
+.footer_pay{
+	display: flex;
+	gap: 25px;
+	align-items: center;
+}
+ .footer_pay a:first-of-type {
+	width: 52px;
+	height: 32px;
+	background: url('./img/pay_1_gray.png') no-repeat;
+}
+.footer_pay a:hover:first-of-type {
+	background: url('./img/pay_1.png') no-repeat;
+} 
+.footer_pay a:nth-of-type(2) {
+	width: 76px;
+	height: 25px;
+	background: url('./img/pay_2_gray.png') no-repeat;
+}
+.footer_pay a:nth-of-type(2):hover {
+	background: url('./img/pay_2.png') no-repeat;
+}
+.footer_pay a:nth-of-type(3) {
+	width: 83px;
+	height: 34px;
+	background: url('./img/pay_3_gray.png') no-repeat;
+}
+.footer_pay a:nth-of-type(3):hover {
+	background: url('./img/Pay_3.png') no-repeat;
 }
