@@ -345,10 +345,14 @@ header {
 	position: relative;
 }
 footer .wrapper {
-	min-height: 250px;
+	height: fit-content;
+}
+footer > div {
+	display: flex;
 }
 footer{
 	display: flex;
+	flex-direction: column;
 }
 
 /* .white_button_arrow {
@@ -407,6 +411,14 @@ footer{
 	padding-bottom: 8px;
 	height: fit-content;
 }
-.footer_social_white_item {
-
+.footer_content {
+	background-color: #4B6049;
+	min-height: 192px;
+	width: 100%;
+}
+.footer_content .wrapper {
+	min-height: 192px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
