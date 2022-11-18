@@ -680,9 +680,10 @@ aside h3 {
 .item_list_group{
 	display: flex;
 	flex-direction: column;
-	gap:	23px;
+	gap: 23px;
 }
-.item_list_group > a {
+
+.item_list_group > a:last-of-type {
 	align-self: center;
 	margin-top: 20px;
 }
@@ -706,4 +707,25 @@ aside h3 {
 .item_heart:hover {
 	background: url('./img/item_heart_hover.svg') center no-repeat;
 	cursor: pointer;
+}
+.sort_by {
+	text-decoration: underline;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	text-decoration: underline 0.5px solid;
+	width: fit-content;
+	position: relative;
+	cursor: pointer;
+}
+.sort_by::after {
+	content: '';
+	background: url('./img/arrow_down.svg') no-repeat center;
+	width: 11px;
+	height: 6px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-20%);
+	right:-12px;
 }
