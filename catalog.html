@@ -31,9 +31,160 @@
             <div class="wrapper">
                <div class="buy_items_content">
                   <div>
-                     <div class="item_filter_group">
-
-                     </div>
+                     <ul class="filter_group" id="accordion_1">
+                        <li class="filter_group_item filter_show">
+                           <a class="filter_title">Група товару</a>
+                           <ul>
+                              <li>
+                                 <input type="checkbox" name="gel">
+                                 <label for="gel">Гель для вмивання</label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" name="cream">
+                                 <label for="cream">Крем для обличчя</label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" name="mask">
+                                 <label for="mask">Маска для обличчя</label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" name="foam">
+                                 <label for="foam">Пінка для вмивання</label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" name="elixir">
+                                 <label for="elixir">Сироватка для обличчя</label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" name="tonik">
+                                 <label for="tonik">Тонік для обличчя</label>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="filter_group_item">
+                           <a class="filter_title">Вік</a>
+                           <ul>
+                              <li>
+                                 <input type="checkbox" name="gel">
+                                 <label for="gel">0 - 10</label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" name="cream">
+                                 <label for="cream">10 - 20</label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" name="mask">
+                                 <label for="mask">20 - 30</label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" name="foam">
+                                 <label for="foam">30 - 40</label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" name="elixir">
+                                 <label for="elixir">40+</label>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="filter_group_item">
+                           <a class="filter_title">Призначення</a>
+                           <ul>
+                              <li>
+                                 <input type="checkbox" name="gel">
+                                 <label for="gel">Для обличчя</label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" name="cream">
+                                 <label for="cream">Для ніг</label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" name="mask">
+                                 <label for="mask">Для тіла</label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" name="foam">
+                                 <label for="foam">Волосся</label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" name="elixir">
+                                 <label for="elixir">Для рук</label>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="filter_group_item">
+                           <a class="filter_title">Час застосування</a>
+                           <ul>
+                              <li>
+                                 <input type="checkbox" name="gel">
+                                 <label for="gel">Ранок</label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" name="gel">
+                                 <label for="gel">Протягом дня</label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" name="gel">
+                                 <label for="gel">Вечір</label>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="filter_group_item">
+                           <a class="filter_title">Ступінь захисту</a>
+                           <ul>
+                              <li>
+                                 <input type="checkbox" name="gel">
+                                 <label for="gel">SPF10 - 15</label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" name="gel">
+                                 <label for="gel">SPF20 - 30</label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" name="gel">
+                                 <label for="gel">SPF40 - 50</label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" name="gel">
+                                 <label for="gel">SPF50 - 100</label>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="filter_group_item">
+                           <a class="filter_title">Тип шкіри</a>
+                           <ul>
+                              <li>
+                                 <input type="checkbox" name="gel">
+                                 <label for="gel">Всі типи</label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" name="gel">
+                                 <label for="gel">Жирна</label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" name="gel">
+                                 <label for="gel">Суха</label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" name="gel">
+                                 <label for="gel">Нормальна</label>
+                              </li>
+                              <li>
+                                 <input type="checkbox" name="gel">
+                                 <label for="gel">Чутлива</label>
+                              </li>
+                           </ul>
+                        </li>
+                        <li class="filter_group_item">
+                           <a class="filter_title">Ціна</a>
+                           <ul>
+                              <li>
+                                 <input type="number" placeholder="від" >
+                                 <span></span>
+                                 <input type="number" placeholder="до">
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
                      <div class="item_list_group">
                            <div id="dropdown_sort" class="sort_group">
                                  <a onclick="dropdownSortBy()" class="sort_by">Сортування</a>
@@ -44,7 +195,7 @@
                                     <a href="#">За ціною: від нищої </a>
                               </div>
                            </div>
-                        <div class="item_list">
+                        <div class="item_list" id="item_list">
                            <div class="item_card">
                               <span class="item_heart"></span>
                               <img src="./img/catalog_item_1.png" alt="oil buttle">
@@ -125,11 +276,76 @@
                            </div>
                            <div class="item_card">
                               <span class="item_heart"></span>
-                              <img src="./img/catalog_item_1.png" alt="oil buttle">
+                              <img src="./img/catalog_item_7.png" alt="oil buttle">
                               <div class="item_properties">
-                                 <a href="./item_sample.html">Флюїд для обличчя
+                                 <a href="./item_sample.html">Пінка для очищення 
+                                    шкіри обличчя</a>
+                                    <p>560 грн</p>
+                              </div>
+                              <div class="item_buy_buttns">
+                                 <a href="./item_sample.html">Детальніше</a>
+                                 <a href="#" class="regular_button reg_btn_item">В кошик</a>
+                              </div>
+                           </div>
+                           <div class="item_card">
+                              <span class="item_heart"></span>
+                              <img src="./img/catalog_item_8.png" alt="oil buttle">
+                              <div class="item_properties">
+                                 <a href="./item_sample.html">Набір
+                                    Денний та нічний крем</a>
+                                    <p>1230 грн</p>
+                              </div>
+                              <div class="item_buy_buttns">
+                                 <a href="./item_sample.html">Детальніше</a>
+                                 <a href="#" class="regular_button reg_btn_item">В кошик</a>
+                              </div>
+                           </div>
+                           <div class="item_card">
+                              <span class="item_heart"></span>
+                              <img src="./img/catalog_item_9.png" alt="oil buttle">
+                              <div class="item_properties">
+                                 <a href="./item_sample.html">Матуючий денний крем
+                                    для жиної шкіри</a>
+                                    <p>680 грн</p>
+                              </div>
+                              <div class="item_buy_buttns">
+                                 <a href="./item_sample.html">Детальніше</a>
+                                 <a href="#" class="regular_button reg_btn_item">В кошик</a>
+                              </div>
+                           </div>
+                           <div class="item_card">
+                              <span class="item_heart"></span>
+                              <img src="./img/catalog_item_4.png" alt="oil buttle">
+                              <div class="item_properties">
+                                 <a href="./item_sample.html">Зволожуюча сироватка
+                                    для нормальної шкіри</a>
+                                    <p>480 грн</p>
+                              </div>
+                              <div class="item_buy_buttns">
+                                 <a href="./item_sample.html">Детальніше</a>
+                                 <a href="#" class="regular_button reg_btn_item">В кошик</a>
+                              </div>
+                           </div>
+                           <div class="item_card">
+                              <span class="item_heart"></span>
+                              <img src="./img/catalog_item_3.png" alt="oil buttle">
+                              <div class="item_properties">
+                                 <a href="./item_sample.html">Гель для вмивання
+                                    для проблемної шкіри</a>
+                                    <p>590 грн</p>
+                              </div>
+                              <div class="item_buy_buttns">
+                                 <a href="./item_sample.html">Детальніше</a>
+                                 <a href="#" class="regular_button reg_btn_item">В кошик</a>
+                              </div>
+                           </div>
+                           <div class="item_card">
+                              <span class="item_heart"></span>
+                              <img src="./img/catalog_item_5.png" alt="oil buttle">
+                              <div class="item_properties">
+                                 <a href="./item_sample.html">Зволожуючий крем
                                     для сухої шкіри</a>
-                                    <p>630 грн</p>
+                                    <p>830 грн</p>
                               </div>
                               <div class="item_buy_buttns">
                                  <a href="./item_sample.html">Детальніше</a>
@@ -151,11 +367,11 @@
                            </div>
                            <div class="item_card">
                               <span class="item_heart"></span>
-                              <img src="./img/catalog_item_1.png" alt="oil buttle">
+                              <img src="./img/catalog_item_2.png" alt="oil buttle">
                               <div class="item_properties">
-                                 <a href="./item_sample.html">Флюїд для обличчя
-                                    для сухої шкіри</a>
-                                    <p>630 грн</p>
+                                 <a href="./item_sample.html">Антиоксидантний
+                                    крем для обличчя</a>
+                                    <p>850 грн</p>
                               </div>
                               <div class="item_buy_buttns">
                                  <a href="./item_sample.html">Детальніше</a>
@@ -164,11 +380,11 @@
                            </div>
                            <div class="item_card">
                               <span class="item_heart"></span>
-                              <img src="./img/catalog_item_1.png" alt="oil buttle">
+                              <img src="./img/catalog_item_3.png" alt="oil buttle">
                               <div class="item_properties">
-                                 <a href="./item_sample.html">Флюїд для обличчя
-                                    для сухої шкіри</a>
-                                    <p>630 грн</p>
+                                 <a href="./item_sample.html">Гель для вмивання
+                                    для проблемної шкіри</a>
+                                    <p>590 грн</p>
                               </div>
                               <div class="item_buy_buttns">
                                  <a href="./item_sample.html">Детальніше</a>
@@ -176,7 +392,7 @@
                               </div>
                            </div>
                         </div>
-                        <a class="regular_white_button" href="#"><span class="white_button_arrow_down"></span>Показати ще</a>
+                        <a class="regular_white_button" onclick="moreItemsShow()" ><span class="white_button_arrow_down"></span>Показати ще</a>
                      </div>
                   </div>
                   <aside class="you_interested_in">

@@ -1,6 +1,14 @@
-
 function dropdownSortBy() {
   document.getElementById("dropdown_sort").classList.toggle("visible");
+}
+
+function moreItemsShow() {
+  document.getElementById("item_list").classList.toggle("more_items");
+}
+function moreItemsShowMain() {
+  document
+    .getElementById("bottom_view_content")
+    .classList.toggle("more_items_main");
 }
 //Get the button
 let mybutton = document.getElementById("scrollToTop");
@@ -30,48 +38,47 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
-
-
-
-window.onclick = function(event) {
-  if (!event.target.matches('.sort_by')) {
-  
+window.onclick = function (event) {
+  if (!event.target.matches(".sort_by")) {
     var dropdowns = document.getElementsByClassName("sort_group");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('visible')) {
-        openDropdown.classList.remove('visible');
+      if (openDropdown.classList.contains("visible")) {
+        openDropdown.classList.remove("visible");
       }
     }
   }
+};
+
+class ItcAccordion {
+  constructor(target, config) {
+    this._el =
+      typeof target === "string" ? document.querySelector(target) : target;
+    const defaultConfig = {
+      alwaysOpen: true,
+    };
+    this._config = Object.assign(defaultConfig, config);
+    this.addEventListener();
   }
 
-  class ItcAccordion {
-    constructor(target, config) {
-      this._el = typeof target === 'string' ? document.querySelector(target) : target;
-      const defaultConfig = {
-        alwaysOpen: true
-      };
-      this._config = Object.assign(defaultConfig, config);
-      this.addEventListener();
-    }
-  
-    addEventListener() {
-      this._el.addEventListener('click', (e) => {
-        const elHeader = e.target.closest('.faq_list_item_group_title');
-        if (!elHeader) {
-          return;
+  addEventListener() {
+    this._el.addEventListener("click", (e) => {
+      const elHeader = e.target.closest(".filter_title");
+      if (!elHeader) {
+        return;
+      }
+      if (!this._config.alwaysOpen) {
+        const elOpenItem = this._el.querySelector(".filter_show");
+        if (elOpenItem) {
+          elOpenItem !== elHeader.parentElement
+            ? elOpenItem.classList.toggle("filter_show")
+            : null;
         }
-        if (!this._config.alwaysOpen) {
-          const elOpenItem = this._el.querySelector('.faq_show');
-          if (elOpenItem) {
-            elOpenItem !== elHeader.parentElement ? elOpenItem.classList.toggle('faq_show') : null;
-          }
-        }
-        elHeader.parentElement.classList.toggle('faq_show');
-      });
-    }
+      }
+      elHeader.parentElement.classList.toggle("filter_show");
+    });
   }
-  
-  new ItcAccordion('#accordion_1');
+}
+
+new ItcAccordion("#accordion_1");
