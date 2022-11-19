@@ -1,7 +1,11 @@
+
+function dropdownSortBy() {
+  document.getElementById("dropdown_sort").classList.toggle("visible");
+}
 //Get the button
 let mybutton = document.getElementById("scrollToTop");
 
-// When the user scrolls down 20px from the top of the document, show the button
+// When the user scrolls down 200px from the top of the document, show the button
 window.onscroll = function () {
   scrollFunction();
 };
@@ -26,31 +30,48 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
-class ItcAccordion {
-  constructor(target, config) {
-    this._el = typeof target === 'string' ? document.querySelector(target) : target;
-    const defaultConfig = {
-      alwaysOpen: true
-    };
-    this._config = Object.assign(defaultConfig, config);
-    this.addEventListener();
+
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.sort_by')) {
+  
+    var dropdowns = document.getElementsByClassName("sort_group");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('visible')) {
+        openDropdown.classList.remove('visible');
+      }
+    }
+  }
   }
 
-  addEventListener() {
-    this._el.addEventListener('click', (e) => {
-      const elHeader = e.target.closest('.faq_list_item_group_title');
-      if (!elHeader) {
-        return;
-      }
-      if (!this._config.alwaysOpen) {
-        const elOpenItem = this._el.querySelector('.faq_show');
-        if (elOpenItem) {
-          elOpenItem !== elHeader.parentElement ? elOpenItem.classList.toggle('faq_show') : null;
+  class ItcAccordion {
+    constructor(target, config) {
+      this._el = typeof target === 'string' ? document.querySelector(target) : target;
+      const defaultConfig = {
+        alwaysOpen: true
+      };
+      this._config = Object.assign(defaultConfig, config);
+      this.addEventListener();
+    }
+  
+    addEventListener() {
+      this._el.addEventListener('click', (e) => {
+        const elHeader = e.target.closest('.faq_list_item_group_title');
+        if (!elHeader) {
+          return;
         }
-      }
-      elHeader.parentElement.classList.toggle('faq_show');
-    });
+        if (!this._config.alwaysOpen) {
+          const elOpenItem = this._el.querySelector('.faq_show');
+          if (elOpenItem) {
+            elOpenItem !== elHeader.parentElement ? elOpenItem.classList.toggle('faq_show') : null;
+          }
+        }
+        elHeader.parentElement.classList.toggle('faq_show');
+      });
+    }
   }
-}
-
-new ItcAccordion('#accordion_1');
+  
+  new ItcAccordion('#accordion_1');
