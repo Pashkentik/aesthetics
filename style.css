@@ -92,6 +92,23 @@ video {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+	width: 20px;
+}
+::-webkit-scrollbar-track{
+	background: #ffffff;
+	
+}
+::-webkit-scrollbar-button:single-button:vertical:increment {
+	background: url(./img/scrollbar_arrow.svg) center no-repeat;
+ }
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+	background: url(./img/scroll_arrow_top.svg) center no-repeat;
+}
+ ::-webkit-scrollbar-thumb {
+	background-color: #4B6049;
+	border: 3px solid #ffffff;
+ }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -1268,5 +1285,6 @@ input[type="number"] {
 	color: #484847;
 }
 .delivery_item:last-of-type > div:last-of-type {
-	overflow-y: scroll;
+	overflow-y: auto;
 }
+
