@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="40"
+   height="40"
+   viewBox="0 0 40 40"
+   fill="none"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="icon_cabinet_white_hover.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="21.8"
+     inkscape:cx="18.09633"
+     inkscape:cy="20"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="1192"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <path
+     d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z"
+     fill="#4B6049"
+     id="path2"
+     inkscape:label="path2"
+     style="fill:#fffbf5;fill-opacity:1" />
+  <path
+     d="M20 18C20.4596 18 20.9148 17.9095 21.3394 17.7336C21.764 17.5577 22.1499 17.2999 22.4749 16.9749C22.7999 16.6499 23.0577 16.264 23.2336 15.8394C23.4095 15.4148 23.5 14.9596 23.5 14.5C23.5 14.0404 23.4095 13.5852 23.2336 13.1606C23.0577 12.736 22.7999 12.3501 22.4749 12.0251C22.1499 11.7001 21.764 11.4423 21.3394 11.2664C20.9148 11.0905 20.4596 11 20 11C19.0717 11 18.1815 11.3687 17.5251 12.0251C16.8687 12.6815 16.5 13.5717 16.5 14.5C16.5 15.4283 16.8687 16.3185 17.5251 16.9749C18.1815 17.6313 19.0717 18 20 18V18ZM11 28.4V29H29V28.4C29 26.16 29 25.04 28.564 24.184C28.1805 23.4314 27.5686 22.8195 26.816 22.436C25.96 22 24.84 22 22.6 22H17.4C15.16 22 14.04 22 13.184 22.436C12.4314 22.8195 11.8195 23.4314 11.436 24.184C11 25.04 11 26.16 11 28.4Z"
+     stroke="#FFFBF5"
+     stroke-width="1.33333"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="path4"
+     inkscape:label="path4"
+     style="fill:#fffbf5;fill-opacity:1" />
+</svg>

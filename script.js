@@ -10,6 +10,13 @@ function moreItemsShowMain() {
     .getElementById("bottom_view_content")
     .classList.toggle("more_items_main");
 }
+
+
+function moreReviewsShow() {
+  document
+    .getElementById("more_reviews")
+    .classList.toggle("more_reviews");
+}
 //Get the button
 let mybutton = document.getElementById("scrollToTop");
 
@@ -82,3 +89,5 @@ class ItcAccordion {
 }
 
 new ItcAccordion("#accordion_1");
+
+
