@@ -163,6 +163,8 @@ h3 {
 	line-height: 24px;
 	color: rgba(72, 72, 71, 0.5);
 }
+
+
 /* ======================================================================================*/
 .flip-it {
 	-moz-transform: scaleX(-1);
@@ -188,6 +190,7 @@ h3 {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	padding-top: 10px;
 }
 .header_content > a , .header_logo {
 	height: 144px;
@@ -219,16 +222,23 @@ h3 {
 	justify-content: center;
 	align-items: center;
 }
+.header_menu_link {
+	transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
 .header_menu_link:nth-of-type(1) {
 	background-image: url('./img/icon_cabinet_green.svg') ;
 	background-repeat: no-repeat;
 	background-position: center;
+	transition: background-image 250ms;
+	
 }
 .header_menu_link:nth-of-type(1):hover {
 	background-image: url('./img/icon_cabinet_green_hover.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	transition: background-image 250ms;
 }
 .header_menu_link:nth-of-type(2){
 	background-image: url('./img/icon_like_green.svg') ;
@@ -1426,3 +1436,13 @@ gap: 30px;
 	justify-content: center;
 	align-items: center;
 }
+a:hover {
+	animation: horizontal-shaking 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+@keyframes horizontal-shaking {
+	0% { transform: translateX(0) }
+	25% { transform: translateX(1px) }
+	50% { transform: translateX(-1px) }
+	75% { transform: translateX(1px) }
+	100% { transform: translateX(0) }
+  }
