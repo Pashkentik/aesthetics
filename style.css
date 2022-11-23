@@ -108,6 +108,12 @@ video {
 ::-webkit-scrollbar-button:single-button:vertical:decrement {
 	background: url(./img/scroll_arrow_top.svg) center no-repeat;
 }
+::-webkit-scrollbar-button:single-button:vertical:increment:hover {
+	background: url(./img/scrollbar_arrow_down_hover.svg) center no-repeat;
+}
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+	background: url(./img/scrollbar_arrow_top_hover.svg) center no-repeat;
+}
  ::-webkit-scrollbar-thumb {
 	background-color: #4B6049;
 	border: 3px solid #ffffff;
@@ -671,10 +677,13 @@ padding: 0 0 85px 0;
 	flex-direction: column;
 	position: relative;
 	box-sizing: border-box;
+	outline: 0.5px solid transparent;
+	transition: outline 2.5s;
 }
 
 .item_card:hover{
 	outline: 0.5px solid #484847;
+	transition: outline 1s;
 }
 
 .item_properties{
@@ -781,9 +790,11 @@ input[type="checkbox"] {
 	height: 10px;
 	border-radius: 1px;
 	content: '';
-	background-color: #484847;
+	background-color: #4B6049;
+	transition: opacity 0.5s;
  }
  input[type="checkbox"]:checked:before {
+	transition: opacity 0.5s;
 	opacity: 1;
  }
 .item_list{
@@ -1465,9 +1476,6 @@ footer a:hover {
 }
 .header_links a,.item_card span {
 	transition: background-image 300ms
-}
-.item_properties a:hover,.item_buy_buttns > a:first-of-type:hover {
-	animation: horizontal-shaking 0.6s both;
 }
 .contact_work_time a:hover {
 	animation: horizontal-shaking 0.6s both;
