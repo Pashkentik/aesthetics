@@ -420,9 +420,7 @@ header {
 	width: 100%;
 	gap: 30px;
 }
-.bottom_view_content_item img {
-	border-radius: 20px;
-}
+
 .bottom_view_content_item:nth-child(2n) img{
 	order: 2;
 }
@@ -678,9 +676,7 @@ padding: 0 0 85px 0;
 .item_card:hover{
 	outline: 0.5px solid #484847;
 }
-.item_card img {
-	border-radius: 10px;
-}
+
 .item_properties{
 	font-size: 20px;
 	line-height: 150%;
