@@ -233,15 +233,12 @@ h3 {
 	background-image: url('./img/icon_cabinet_green.svg') ;
 	background-repeat: no-repeat;
 	background-position: center;
-	transition: background-image 250ms;
-	
 }
 .header_menu_link:nth-of-type(1):hover {
 	background-image: url('./img/icon_cabinet_green_hover.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	transition: background-image 250ms;
 }
 .header_menu_link:nth-of-type(2){
 	background-image: url('./img/icon_like_green.svg') ;
@@ -1446,6 +1443,24 @@ gap: 30px;
 	75% { transform: translateX(1px) }
 	100% { transform: translateX(0) }
   }
-a:hover {
+header a:hover {
+	transform: translateY(-6px);
+	transition: transform 1s;
+}
+header a {
+	transition: transform 1s;
+}
+footer a:hover {
 	animation: horizontal-shaking 0.8s both;
+}
+.header_content > a:hover,.footer_content > div > a:hover {
+	animation: none;
+	transform: none;
+}
+.footer_item:first-of-type > li:hover {
+	transform: translateX(-5%);
+	transition: transform 1s;
+}
+.footer_item:first-of-type > li {
+	transition: transform 1s;
 }
