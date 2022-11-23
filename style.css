@@ -1469,3 +1469,6 @@ footer a:hover {
 .item_properties a:hover,.item_buy_buttns > a:first-of-type:hover {
 	animation: horizontal-shaking 0.6s both;
 }
+.contact_work_time a:hover {
+	animation: horizontal-shaking 0.6s both;
+}
