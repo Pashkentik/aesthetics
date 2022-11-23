@@ -1439,19 +1439,15 @@ gap: 30px;
 	75% { transform: translateX(1px) }
 	100% { transform: translateX(0) }
   }
-header a:hover {
+.header_navigation a:hover {
 	transform: translateY(-6px);
 	transition: transform 1s;
 }
-header a {
+.header_navigation a {
 	transition: transform 1s;
 }
 footer a:hover {
 	animation: horizontal-shaking 0.8s both;
-}
-.header_content > a:hover,.footer_content > div > a:hover {
-	animation: none;
-	transform: none;
 }
 .footer_item:first-of-type > li:hover {
 	transform: translateX(-5%);
@@ -1459,4 +1455,14 @@ footer a:hover {
 }
 .footer_item:first-of-type > li {
 	transition: transform 1s;
+}
+.header_content > a:hover,.footer_content > div > a:hover {
+	animation: none;
+	transform: none;
+}
+.header_links a:hover{
+	transition: background-image 300ms;
+}
+.header_links a {
+	transition: background-image 300ms
 }
