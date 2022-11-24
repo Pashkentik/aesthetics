@@ -1,7 +1,23 @@
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active_tab", "");
+  }
+  document.getElementById(tabName).style.display = "flex";
+  evt.currentTarget.className += " active_tab";
+}
+
+document.getElementById("defaultOpen").click();
+
 function dropdownSortBy() {
   document.getElementById("dropdown_sort").classList.toggle("visible");
 }
-
 
 function moreItemsShow() {
   document.getElementById("item_list").classList.toggle("more_items");
@@ -56,34 +72,6 @@ window.onclick = function (event) {
   }
 };
 
-class ItcAccordion {
-  constructor(target, config) {
-    this._el =
-      typeof target === "string" ? document.querySelector(target) : target;
-    const defaultConfig = {
-      alwaysOpen: true,
-    };
-    this._config = Object.assign(defaultConfig, config);
-    this.addEventListener();
-  }
-
-  addEventListener() {
-    this._el.addEventListener("click", (e) => {
-      const elHeader = e.target.closest(".filter_title");
-      if (!elHeader) {
-        return;
-      }
-      if (!this._config.alwaysOpen) {
-        const elOpenItem = this._el.querySelector(".filter_show");
-        if (elOpenItem) {
-          elOpenItem !== elHeader.parentElement
-            ? elOpenItem.classList.toggle("filter_show")
-            : null;
-        }
-      }
-      elHeader.parentElement.classList.toggle("filter_show");
-    });
-  }
+function moreHistoryItems() {
+  document.getElementById("dropdown_history").classList.toggle("more_history");
 }
-
-new ItcAccordion("#accordion_1");
