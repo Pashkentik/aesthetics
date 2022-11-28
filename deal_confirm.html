@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Aesthetics</title>
+   <link rel="stylesheet" href="./style.css">
+   <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+</head>
+<body>
+   <header>
+      <div class="wrapper">
+         <div class="header_content">
+            <a href="./index.html"><img class="header_logo" src="./img/header_logo.svg" alt="logo image"></a>  
+            <nav class="header_navigation">
+               <a href="./catalog.html" class="header_navigation_link">Каталог</a>
+               <a href="./delivery.html" class="header_navigation_link">Доставка та оплата</a>
+               <a href="./vlog.html" class="header_navigation_link">Блог</a>
+               <a href="./contact.html" class="header_navigation_link">Контакти</a>
+            </nav>
+            <div class="header_links">
+               <a href="./cabinet.html" class="header_menu_link"></a>
+               <a href="./wish_list.html" class="header_menu_link"></a>
+               <a href="./deal_confirm.html" class="header_menu_link"></a>
+            </div> 
+         </div>
+      </div>
+   </header>
+   <main>
+      <div class="wrapper">
+         <section class="buy_confirm">
+               <div class="buy_confirm_content">
+                     <h3>Оформлення замовлення</h3>
+                     <div>
+                        <div class="confirm_btns">
+                           <a onclick="openTab(event, 'personal_id')" id="defaultOpen" class="tablinks"><span>1</span><p>Особисті данні</p></adefaultOpen>
+                           <a onclick="openTab(event, 'pay_delivery')" class="tablinks"><span>2</span><p>Оплата / Доставка</p></a>
+                        </div>
+                        <div id="personal_id" class="tabcontent confirm_tab_content">
+                              <div>
+                                 <label for="name">Ваше ім’я</label>
+                                 <input class="cabinet_input_regular" type="text" id="name" placeholder="Світлана">
+                              </div>
+                              <div>
+                                 <label for="last_name">Ваше прізвище</label>
+                                 <input class="cabinet_input_regular" type="text" id="last_name" placeholder="Шевченко">
+                              </div>
+                              <div>
+                                 <label for="_mail">E-mail</label>
+                                 <input class="cabinet_input_regular" type="email" id="_mail" placeholder="shevSv002@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                           </div>
+                        </div>
+                        <div id="pay_delivery" class="tabcontent pay_delivery_content">
+                           <div>
+                              <div>
+                                 <h4>Оберіть спосіб доставки:</h4>
+                                 <div>
+                                    <input type="radio" name="delivery_new" id="delivery_new_1">
+                                    <label for="delivery_new_1">Нова пошта</label>
+                                 </div>
+                                 <div>
+                                    <input checked type="radio" name="delivery_new" id="delivery_new_2">
+                                    <label for="delivery_new_2">Доставка кур’єром (безкоштовно від 2000 грн)</label>
+                                 </div>
+                              </div>
+                              <div>
+                                 <h4>Оберіть спосіб оплати:</h4>
+                                 <div>
+                                    <input checked type="radio" name="pay_new" id="pay_new_1">
+                                    <label for="pay_new_1">Оплата при отриманні</label>
+                                 </div>
+                                 <div>
+                                    <input type="radio" name="pay_new" id="pay_new_2">
+                                    <label for="pay_new_2">Банківською картою</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div>
+                              <h4>Оберіть спосіб оплати:</h4>
+                                 <div>
+                                    <div>
+                                       <input checked type="radio" name="adress_new" id="adress_new_1">
+                                       <label for="adress_new_1"><p>Шевченко Світлана</p>
+                                          <p>Місто КиЇв</p>
+                                          <p>Градинська 11б, 85</p>
+                                          <p>+38 068 564 77 99</p></label>
+                                    </div>
+                                    <div>
+                                       <input type="radio" name="adress_new" id="adress_new_2">
+                                       <label for="adress_new_2"><p>Шевченко Світлана</p>
+                                          <p>Місто Харків</p>
+                                          <p>Трінклера 18, 65</p>
+                                          <p>+38 068 564 77 99</p></label>
+                                    </div>
+                                 </div>
+                           </div>
+                        </div>
+                        <div class="confirm_item_list">
+                           <ul class="confirm_item_list_content">
+                              <li>
+                                 <div>
+                                    <img src="./img/catalog_item_2.png" alt="cream">
+                                    <p>Антиоксидантний крем
+                                       для обличчя</p>
+                                 </div>
+                                    <div>
+                                       <input class="number_input" type="number" value="1">
+                                       <p>850 грн </p>
+                                       <a href="#"></a>
+                                    </div>
+                              </li>
+                              <li>
+                                 <div>
+                                    <img src="./img/catalog_item_12.png" alt="cream">
+                                    <p>Антивікова сироватка
+                                       для зони навколо очей</p>
+                                 </div>
+                                    <div>
+                                       <input class="number_input" type="number" value="1">
+                                       <p>900 грн </p>
+                                       <a href="#"></a>
+                                    </div>
+                              </li>
+                              <li>
+                                  <div>
+                                     <img src="./img/catalog_item_13.png" alt="cream">
+                                     <p>Лосьон для нормальної
+                                       та комбінованої шкіри</p>
+                                  </div>
+                                    <div>
+                                       <input class="number_input" type="number" value="1">
+                                       <p>1050 грн </p>
+                                       <a href="#"></a>
+                                    </div>
+                              </li>
+                              <li>
+                                 <div>
+                                    <img src="./img/catalog_item_4.png" alt="cream">
+                                    <p>Матуючий денний крем
+                                       для жирної шкіри</p>
+                                 </div>
+                                    <div>
+                                       <input class="number_input" type="number" value="1">
+                                       <p>777 грн </p>
+                                       <a href="#"></a>
+                                    </div>
+                              </li>
+                              <li>
+                                 <div>
+                                    <img src="./img/catalog_item_7.png" alt="cream">
+                                    <p>Зволожуюча сироватка
+                                       для нормальної шкіри</p>
+                                 </div>
+                                    <div>
+                                       <input class="number_input" type="number" value="1">
+                                       <p>444 грн </p>
+                                       <a href="#"></a>
+                                    </div>
+                              </li>
+                           </ul>
+                           <p>Загальна сумма: 2800 грн</p>
+                        </div>
+                     </div>
+                     <a href="./confirm_success.html" class="regular_button">Оформити</a>
+               </div>
+         </section>
+      </div>
+   </main>
+   <footer>
+      <div>
+         <div class="wrapper">
+            <div class="footer_social_white">
+               <a target="_blank" href="https://www.instagram.com/pashkentik/" class="footer_social_white_item"></a>
+               <a href="mailto:pavlo.prustypa@gmail.com" class="footer_social_white_item"></a>
+               <a href="tel:+380977114340" class="footer_social_white_item"></a>
+               <a target="_blank" href="https://goo.gl/maps/Ub9WnaBzfhWBVQdT9" class="footer_social_white_item"></a>
+            </div>
+      </div>
+      </div>
+         <div class="footer_content">
+            <div class="wrapper">
+               <a href="#" class="footer_white_logo"><img src="./img/footer_white_logo.svg" alt="logo image"></a>
+               <div class="footer_item_group">
+                  <ul class="footer_item">
+                     <li><a href="./vlog.html">Каталог</a></li>
+                     <li><a href="./delivery.html">Доставка та оплата</a></li>
+                     <li><a href="./vlog.html">Блог</a></li>
+                     <li><a href="./contact.html">Контакти</a></li>
+                  </ul>
+                  <ul class="footer_item">
+                     <li><p>Режим роботи:</p></li>
+                     <li><p>Понеділок - Субота</p></li>
+                     <li><p>З 9:00 до 21:00</p></li>
+                  </ul>
+                  <div class="footer_item">
+                     <a href="">Політика конфіденційності</a>
+                     <div>
+                        <a href="tel:+380635542221">+38 (063) 554 22 21 </a>
+                        <a href="tel:+380956789900">+38 (095) 678 99 00 </a>
+                     </div>
+                     <div class="footer_pay">
+                        <a target="_blank" href="https://www.mastercard.ua/uk-ua.html"></a>
+                        <a target="_blank" href="https://www.visa.com.ua/ru_UA"></a>
+                        <a target="_blank" href="https://www.apple.com/apple-pay/"></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+   </footer>
+   <a class="scrollToTop" id="scrollToTop">
+      <img src="./img/to_top_arrow.svg" alt="arrow">
+   </a>
+   <script src="./tab_changer.js"></script>
+</body>
+</html>
