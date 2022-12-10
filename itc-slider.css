@@ -9,10 +9,15 @@
 
 .itc-slider {
   position: relative;
+  display: flex;
+  justify-content: center ;
 }
 
 .itc-slider__wrapper {
   overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -28,7 +33,6 @@
 
 .itc-slider__item {
   flex: 0 0 100%;
-  max-width: 100%;
   user-select: none;
   will-change: transform;
   background-size: cover;
