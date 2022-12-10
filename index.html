@@ -8,6 +8,8 @@
    <link rel="stylesheet" href="./style.css">
    <link rel="stylesheet" href="./slider.css">
    <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+   <link rel="stylesheet" href="./itc-slider.css">
+   <script src="./itc-slider.js" defer></script>
 </head>
 <body>
    <header>
@@ -49,19 +51,37 @@
          </div>
       </section>
       <section>
-            <div class="main_middle">
-               <div>
-                  <div class="wrapper">
-                     <h2>Новинка від AESTHETICS</h2>
-                     <p>Зволожуюча сиворотка
-                        для обличчя</p>
-                  </div>
+            <div class="main_middle itc-slider" data-slider="itc-slider" data-autoplay="true" data-interval="5000">
+               <div class="itc-slider__wrapper">
+                     <div class="itc-slider__items">
+                        <div class="itc-slider__item slider_item_1">
+                           <div class="slider_wrapper">
+                              <h2>Новинка від AESTHETICS</h2>
+                              <p>Зволожуюча сиворотка
+                                 для обличчя</p>
+                           </div>
+                        </div>
+                        <div class="itc-slider__item slider_item_2">
+                           <div class="slider_wrapper">
+                              <h2>AESTHETICS</h2>
+                              <p>Антиоксидантний крем для обличчя</p>
+                           </div>
+                        </div>
+                        <div class="itc-slider__item slider_item_3">
+                           <div class="slider_wrapper">
+                              <h2>Чудова пропозиція від AESTHETICS</h2>
+                              <p>Флюїд для обличчя
+                                 суха шкіра</p>
+                           </div>
+                        </div>
+                     </div>
                </div>
-               <div class="main_middle_dots">
-                  <span class="main_middle_dot middle_dot_active"></span>
-                  <span class="main_middle_dot"></span>
-                  <span class="main_middle_dot"></span>
+               <div class="itc-slider__indicators ">
+                  <span class="itc-slider__indicator main_middle_dot"  data-slide-to="0"></span>
+                  <span class="itc-slider__indicator main_middle_dot" data-slide-to="1"></span>
+                  <span class="itc-slider__indicator main_middle_dot" data-slide-to="2"></span>
                </div>
+
             </div>
          <div class="main_top_view_button">
             <a href="./catalog.html" class="regular_button">Каталог</a>
