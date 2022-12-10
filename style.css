@@ -392,9 +392,7 @@ header {
 	position: relative;
 	width: 100%;
 }
-.main_middle_dot {
 
-}
 .middle_dot_active::before {
 	content: "";
 	display: block;
