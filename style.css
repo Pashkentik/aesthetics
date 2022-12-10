@@ -350,14 +350,17 @@ header {
 	width: 100%;
 }
 .slider_item_1 {
+
 	background: url('./img/main_middle_section_background.png') no-repeat center;
 	background-size: cover;
 }
 .slider_item_3 {
+
 	background: url('./img/main_middle_slide_3.png') no-repeat center;
 	background-size: cover;
 }
 .slider_item_2 {
+	
 	background: url('./img/main_middle_slide_2.png') no-repeat center;
 	background-size: cover;
 }
