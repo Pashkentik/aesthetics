@@ -509,7 +509,7 @@ footer{
 	position: absolute;
 	left: 165px;
 	top: 19px;
-	width: 70px;
+	width: 74px;
 	background: url('./img/arrow_white_button.svg') no-repeat;
 	height: 12px;
 	opacity: 0;
@@ -527,7 +527,7 @@ footer{
 	top: 35px;
 	width: 12px;
 	background: url('./img/arow_white_button_down.svg') no-repeat;
-	height: 30px;
+	height: 34px;
 	opacity: 0;
 	transition-property: opacity;
 	transition-duration: 0.6s;
@@ -709,12 +709,18 @@ padding: 0 0 85px 0;
 .item_properties > a {
 	min-height: 60px;
 }
+.item_properties > a:hover {
+	text-decoration: underline;
+}
 .item_buy_buttns{
 	font-size: 16px;
 	line-height: 20px;
 	display: flex;
 	align-items: center;
 	gap: 52px;
+}
+.item_buy_buttns a:first-of-type:hover {
+	text-decoration: underline;
 }
 .reg_btn_item{
 	background: #4B6049;
@@ -808,6 +814,16 @@ input[type="checkbox"], input[type="radio"] {
 	transition: opacity 0.5s;
 	opacity: 1;
  }
+ input[type="checkbox"]:hover::before, input[type="radio"]:hover::before {
+	transition: opacity 0.5s;
+	opacity: 1;
+	cursor: pointer;
+ }
+ input[type="checkbox"] ~ label {
+	cursor: pointer;
+ }
+
+
 .item_list{
 	display: flex;
 	flex-wrap: wrap;
@@ -870,6 +886,8 @@ input[type="checkbox"], input[type="radio"] {
 	color: #484847;
 	position: relative;
 	width: inherit;
+	scale: 1;
+	transition: all 0.5s;
 }
 .filter_group_item:not(:last-child) .filter_title::before {
 	content: '';
@@ -891,6 +909,7 @@ input[type="checkbox"], input[type="radio"] {
 	transition: 0.6s ease-out;
 	transform: rotate(90deg);
 }
+
 
 .sort_group div{
 	display: flex;
@@ -935,14 +954,22 @@ input[type="checkbox"], input[type="radio"] {
 	cursor: pointer;
 }
 .sort_by {
-	text-decoration: underline;
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 24px;
-	text-decoration: underline 0.5px solid;
-	width: fit-content;
+	text-decoration: underline 0.5px solid rgba(72, 72, 71, 0);
+	max-width: fit-content;
 	position: relative;
 	cursor: pointer;
+	scale: 1;
+	transition: scale 0.5s;
+	transition: all 0.5s;
+}
+
+.sort_by:hover {
+	transition: all 0.5s;
+	font-weight: 400;
+	text-decoration: underline 0.5px solid rgba(72, 72, 71, 1);
 }
 .sort_by::after {
 	content: '';
@@ -972,6 +999,7 @@ input[type="checkbox"], input[type="radio"] {
 }
 .sort_group{
 	position: relative;
+	width: fit-content;
 }
 .more_items{
 	max-height: 4280px;
@@ -996,6 +1024,11 @@ input[type="checkbox"], input[type="radio"] {
 .filter_show:not(:last-child) .filter_title::after {
 	transform: rotate(0deg);
 }
+.filter_title:hover {
+	scale: 1.05;
+	transition: all 0.5s;
+}
+
 input[type="number"] {
 	border: 1px solid #484847;
    background: #ffffff !important;
