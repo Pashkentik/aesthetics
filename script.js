@@ -1,7 +1,10 @@
 function dropdownSortBy() {
   document.getElementById("dropdown_sort").classList.toggle("visible");
 }
-
+function showMenuMobile() {
+  document.getElementById("mobileHeaderButton").classList.toggle("changeMobileButton");
+  document.getElementById("mobileMenu").classList.toggle("mobileMenu_open");
+}
 
 function moreItemsShow() {
   document.getElementById("item_list").classList.toggle("more_items");
