@@ -2451,9 +2451,13 @@ padding-bottom: 0;
 	}
 	.regular_button::after {
 		margin: 0 0 1vw 1vw;
+		border: 0.5px solid #484847;
 	}
 	.regular_button:hover {
 		margin: 0 0 1vw 1vw;
+	}
+	.regular_white_button {
+		border: 1px solid #484847;
 	}
 	.mobile_menu {
 		position: absolute;
