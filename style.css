@@ -669,6 +669,7 @@ footer{
 	cursor: pointer;
 }
 .buy_items_section{
+	position: relative;
 	display: flex;
 	padding: 67px 0 0 0;
 	justify-content: space-between;
@@ -977,6 +978,9 @@ input[type="checkbox"], input[type="radio"] {
 	transition: scale 0.5s;
 	transition: all 0.5s;
 }
+.sort_by:first-of-type {
+	display: none;
+}
 
 .sort_by:hover {
 	transition: all 0.5s;
@@ -1000,12 +1004,19 @@ input[type="checkbox"], input[type="radio"] {
 	transition: all 0.6s ease-in;
 	visibility: collapse;
 }
+.dropdown_filter {
+	transition: all 0.6s ease-in;
+}
 .visible .dropdown_sort {
 	visibility: visible;
 	opacity: 1;
 	transition: all 0.8s ease-out;
 }
-.visible .sort_by::after {
+.visible .sort_by:nth-of-type(2):after {
+	transform: rotate(-180deg);
+	transition: all 1s;
+}
+.visible_filter .sort_by:nth-of-type(1):after {
 	transform: rotate(-180deg);
 	transition: all 1s;
 }
@@ -2299,6 +2310,10 @@ width: 100%;
 .you_interested_in h3 { 
 	font-size: 4vw;
 }
+main .main_wrapper_catalog {
+	width: 96%;
+	justify-content: space-between;
+}
 }
 @media (max-width: 1000px) {
 	.header_content > a:first-of-type, .footer_white_logo {
@@ -2426,8 +2441,124 @@ padding-bottom: 0;
 .bottom_view_content {
 	max-height: 2200px;
 }
+.item_list_group {
+	width: 100%;
+}
+.sort_by:first-of-type {
+	display: block;
+}
+.sort_group {
+	display: flex;
+	gap: 20vw;
+	padding-left: 40px;
+}
+.sort_group div{
+	top: 100%;
+	right: -50%;
+}
+.dropdown_filter {
+	visibility: collapse;
+	opacity: 0;
+	z-index: 4;
+	position: absolute;
+	background-color: #fff;
+	top: 4%;
+	left: 0;
+	padding: 10px;
+}
+.filter_on {
+	visibility: visible;
+	opacity: 1;
+	transition: all 0.6s ease-in;
+}
+.filter_group {
+	padding: 0;
+}
+.dropdown_sort {
+	padding: 10px;
+}
+.item_list li {
+	width: 30%;
+}
+.item_list  {
+	gap: 2vw;
+	justify-content: space-evenly;
+}
+.item_buy_buttns {
+	justify-content: space-between;
+	max-width: 100%;
+	gap:0
+}
+.item_card .item_buy_buttns .reg_btn_item {
+	display: block;
+	background-color: unset;
+	background: url(./img/icon_basket_green.svg) no-repeat;
+	background-size: contain;
+	width: 4vw;
+   height: 4vw;
+	margin: 0;
+	transition: all 0.3s;
+	font-size: 20px;
+	color: transparent;
+}
+.item_card .item_buy_buttns .reg_btn_item::after {
+	display: none;
+}
+.item_card .item_buy_buttns .reg_btn_item:hover {
+	transition: all 0.3s;
+	margin: 0;
+	transform: scale(1.1);
+}
 }
 @media (max-width:800px) {
+	main .main_wrapper_catalog {
+		width: 94%;
+
+	}
+	.you_interested_in_carousel {
+		max-height: 51vw;
+	}
+	.card_clean .item_buy_buttns, .card_clean .item_heart {
+		display: flex;
+		opacity: 0;
+		transition: all .5s ease;
+	}
+	.card_clean:hover .item_buy_buttns,.card_clean:hover .item_heart {
+		opacity: 1;
+	}
+	.item_heart {
+		width: 4vw;
+    	height: 4vw;
+		background-size: contain ;
+		top: 1vw;
+		right: 1vw;
+	}
+	.item_heart:hover {
+		width: 4vw;
+    	height: 4vw;
+		background-size: contain ;
+	}
+	.item_card {
+		height: 50vw;
+		justify-content: space-between;
+		gap: 0;
+		padding: 5px;
+	}
+	.card_clean {
+		height: 50vw;
+		justify-content: space-between;
+		gap: 0;
+		
+	}
+	.item_properties {
+		font-size: 2.5vw;
+	}
+	.item_buy_buttns a {
+		font-size: 2.5vw;
+	}
+	.item_buy_buttns {
+		justify-self: center;
+	}
 	.itc-slider__indicator {
 		width: 3vw;
 		height: 3vw;
@@ -2638,6 +2769,54 @@ padding-bottom: 0;
 	
 }
 @media (max-width:650px) {
+	.item_list {
+		justify-content: space-between;
+	}
+	.card_clean {
+		width: 48%;
+		height: 70vw;
+	}
+	.card_clean .item_heart, .card_clean .item_buy_buttns {
+		opacity: 1;
+	}
+	.you_interested_in_carousel{
+	 max-height: 144vw;
+	}
+	.item_heart{
+		width: 6vw;
+		height: 6vw;
+		top: 2vw;
+		right: 2vw;
+	}
+	.item_heart:hover {
+		width: 6vw;
+		height: 6vw;
+		top: 2vw;
+		right: 2vw;
+	}
+	.item_card {
+		padding: 10px;
+	}
+	.item_card .item_buy_buttns .reg_btn_item {
+		width: 6vw;
+		height: 6vw;
+	}
+	.item_properties > a {
+		min-height: unset;
+	}
+	.filter_on {
+		top:5%;
+	}
+	.item_list li {
+		width: 48%;
+		height: 70vw;
+	}
+	.item_properties {
+		font-size: 3.5vw;
+	}
+	.item_buy_buttns a {
+		font-size: 3.5vw;
+	}
 	.bottom_view_content_item img {
 		width: 100%;
 	}
@@ -2742,7 +2921,6 @@ padding-bottom: 0;
 	}
 	
 }
-
 @media(max-width: 400px) {
 	.header_links .header_menu_link_mobile span::after {
 		top: 2vw;

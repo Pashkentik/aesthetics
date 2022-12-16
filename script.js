@@ -1,6 +1,10 @@
 function dropdownSortBy() {
   document.getElementById("dropdown_sort").classList.toggle("visible");
 }
+function dropdownSortByFilter() {
+  document.getElementById("dropdown_sort").classList.toggle("visible_filter");
+  document.getElementById("dropdown_filter").classList.toggle("filter_on");
+}
 function showMenuMobile() {
   document.getElementById("mobileHeaderButton").classList.toggle("changeMobileButton");
   document.getElementById("mobileMenu").classList.toggle("mobileMenu_open");

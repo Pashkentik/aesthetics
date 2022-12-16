@@ -38,10 +38,10 @@
       </div>
    </header>
    <main>
-      <div class="wrapper">
+      <div class="wrapper main_wrapper_catalog">
          <div class="buy_items_content">
             <section class="buy_items_section">
-               <aside>
+               <aside id="dropdown_filter" class="dropdown_filter">
                   <ul class="filter_group" id="accordion_1">
                      <li class="filter_group_item filter_show">
                         <a class="filter_title">Група товару</a>
@@ -198,7 +198,8 @@
                   </ul>
                </aside>
                <div class="item_list_group">
-                     <div id="dropdown_sort" class="sort_group">
+                        <div id="dropdown_sort" class="sort_group">
+                           <a onclick="dropdownSortByFilter()" class="sort_by">Фільтри</a>
                            <a onclick="dropdownSortBy()" class="sort_by">Сортування</a>
                            <div class="dropdown_sort">
                               <a href="#">За популярністю </a>
