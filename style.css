@@ -2620,6 +2620,18 @@ padding-bottom: 0;
 	
 }
 @media (max-width:650px) {
+	.header_links .header_menu_link_mobile span::after {
+		top: 1.5vw;
+	}
+	.header_links .header_menu_link_mobile span::before {
+		top: -1.5vw;
+	}
+	.header_links .changeMobileButton span::after {
+		top: 0 ;
+	}
+	.header_links .changeMobileButton span::before {
+		top: 0;
+	}
 	.header_links a {
 		width: 24px;
 		height: 24px;
