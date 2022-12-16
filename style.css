@@ -2697,6 +2697,12 @@ padding-bottom: 0;
 		flex-wrap: nowrap;
 		
 	}
+	.header_links .header_menu_link_mobile span::before {
+		top:-6px
+	}
+	.header_links .header_menu_link_mobile span::after {
+		top: 6px;
+	}
 }
 
 @media(max-width: 400px) {
@@ -2752,12 +2758,6 @@ padding-bottom: 0;
 }
 .header_content > a:first-of-type, .footer_white_logo {
 	width: 150px;
-}
-.header_links .header_menu_link_mobile span::before {
-	top:-6px
-}
-.header_links .header_menu_link_mobile span::after {
-top: 6px;
 }
 .main_top_view .wrapper {
 	width: fit-content;
