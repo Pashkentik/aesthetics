@@ -1,11 +1,15 @@
+
 @font-face {
    font-family: 'poiret';
    src: url('./fonts/PoiretOne.ttf') format('truetype')
 };
 @font-face {
    font-family: 'candara';
-   src: url('./fonts/candara.ttf') format('truetype')
-
+   src: url('./fonts/Candara.woff') format('woff')
+};
+@font-face {
+   font-family: 'candara';
+   src: url('./fonts/Candara.woff2') format('woff2')
 };
 
 body{
@@ -2606,6 +2610,14 @@ padding-bottom: 0;
 	
 }
 @media (max-width:650px) {
+	.header_links a {
+		width: 24px;
+		height: 24px;
+	}
+	.header_links {
+		height: fit-content;
+		gap: 21px;
+	}
 	.footer_content {
 		min-height: 270px;
 	}
@@ -2741,18 +2753,11 @@ padding-bottom: 0;
 .header_content > a:first-of-type, .footer_white_logo {
 	width: 150px;
 }
-.header_links a {
-	width: 24px;
-	height: 24px;
-}
 .header_links .header_menu_link_mobile span::before {
 	top:-6px
 }
 .header_links .header_menu_link_mobile span::after {
 top: 6px;
-}
-.header_links {
-	gap: 21px;
 }
 .main_top_view .wrapper {
 	width: fit-content;
