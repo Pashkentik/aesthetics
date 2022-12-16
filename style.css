@@ -2638,6 +2638,9 @@ padding-bottom: 0;
 	
 }
 @media (max-width:650px) {
+	.bottom_view_content_item img {
+		width: 100%;
+	}
 	.header_links .header_menu_link_mobile span::after {
 		top: 1.5vw;
 	}
