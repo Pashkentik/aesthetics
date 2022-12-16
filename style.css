@@ -2695,4 +2695,38 @@ padding-bottom: 0;
 	.mobile_menu {
 		min-width: 100%;
 	}
+	.bottom_view_content_item{
+		width: 100%;
+	}
+	.main_middle, .itc-slider__item {
+		height: 240px;
+	}
+	.main_top_view_button {
+		padding-top: 40px;
+	}
+	.top_section_content {
+		padding-left: 0;
+	}
+	.slider_wrapper {
+		padding-left: 15px;
+	}
+	.main_top_view {
+		flex-direction: column;
+	}
+	.main_top_view_img {
+		position: relative;
+		height: 240px;
+		width: 100%;
+	}
+	.top_section_content{
+		padding: 15px 0 40px 0;
+	}
+	.top_section_content h2 {
+		font-size: 32px;
+		max-width: 328px;
+	}
+	.top_section_content p {
+		font-size: 18px;
+		max-width: 328px;
+	}
 }
