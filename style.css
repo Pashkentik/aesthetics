@@ -1,16 +1,13 @@
 
 @font-face {
    font-family: 'poiret';
-   src: url('./fonts/PoiretOne.ttf') format('truetype')
-};
+   src: url('./fonts/PoiretOne.ttf') format('truetype');
+}
 @font-face {
    font-family: 'candara';
-   src: url('./fonts/Candara.woff') format('woff')
-};
-@font-face {
-   font-family: 'candara';
-   src: url('./fonts/Candara.woff2') format('woff2')
-};
+   src: url('./fonts/Candara.woff') format('woff'),
+	 	  url('./fonts/Candara.woff2') format('woff2');
+}
 
 body{
 	margin: 0;
