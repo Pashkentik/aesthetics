@@ -311,6 +311,7 @@ header {
 	flex-direction: column;
 	justify-content: space-between;
 	min-height: 652px;
+	padding: 15px 0 40px 0;
 }
 .regular_button{
 	width: 219px;
@@ -2435,6 +2436,15 @@ padding-bottom: 0;
 		font-size: 3vw;
 		background-position: right;
 	}
+	.white_button_arrow_down {
+		top: 5vw;
+		transform: translateX(-50%);
+		font-size: 3vw;
+		background-position: bottom;
+		position: absolute;
+		left: 50%;
+		height: 6vw;
+	}
 	
 	.regular_button {
 		width: 25vw;
@@ -2743,9 +2753,7 @@ padding-bottom: 0;
 		height: 240px;
 		width: 100%;
 	}
-	.top_section_content{
-		padding: 15px 0 40px 0;
-	}
+	
 	.top_section_content h2 {
 		font-size: 32px;
 		max-width: 328px;
