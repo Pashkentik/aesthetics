@@ -2225,7 +2225,12 @@ background-color: #4B6049;
 .footer_item_mobile {
 	display: none !important;
 }
-
+main .wrapper {
+	width: 100%
+}
+main {
+	width: 100%;
+}
 @media (max-width: 1439px) {
 .scrollToTop {
 	right: 2vw;
@@ -2281,6 +2286,18 @@ width: 100%;
 }
 .item_list {
 	justify-content: center;
+}
+.you_interested_in_carousel {
+	flex-wrap: wrap;
+	max-height: 410px;
+	padding: 1px;
+	overflow: hidden;
+}
+.you_interested_in {
+	padding-bottom: 40px;
+}
+.you_interested_in h3 { 
+	font-size: 4vw;
 }
 }
 @media (max-width: 1000px) {
@@ -2795,7 +2812,7 @@ padding-bottom: 0;
 }
 
 }
-@media (max-width:360px) {
+@media (max-width:340px) {
 	.header_links {
 		gap: 10px;
 	}
