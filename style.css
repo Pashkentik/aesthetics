@@ -2564,6 +2564,7 @@ padding-bottom: 0;
 @media (max-width:800px) {
 	.item_hiders {
 		font-size: 2.5vw;
+		line-height: 150%;
 	}
 	.review {
 		width: 100%;
@@ -2904,6 +2905,7 @@ padding-bottom: 0;
 	}
 	.item_card_about_it p {
 		font-size: 4vw;
+		line-height: 150%;
 	}
 	.review p {
 		font-size: 3vw;
