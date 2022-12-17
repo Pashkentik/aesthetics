@@ -186,7 +186,7 @@ h3 {
 	filter: FlipH;
 }
 .wrapper {
-	max-width: 1074px;
+	max-width: 1104px;
    margin: 0 auto;
    padding: 0 15px;
    box-sizing: border-box;
@@ -840,14 +840,13 @@ input[type="checkbox"], input[type="radio"] {
 .item_list{
 	display: flex;
 	flex-wrap: wrap;
-	gap: 28px;
 	max-height: 2140px;
 	overflow: hidden;
 	box-sizing: border-box;
 	padding: 2px;
-	justify-content: flex-start;
 	min-width: fit-content;
 	transition: max-height 1s ease-out;
+	gap: 28px;
 }
 .item_list_group{
 	display: flex;
