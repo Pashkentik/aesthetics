@@ -2471,6 +2471,9 @@ main .main_wrapper_catalog {
 	}
 }
 @media (max-width: 900px) {
+	.item_card {
+		justify-content: space-between;
+	}
 .bottom_view_content_item {
 	flex-wrap: wrap;
 	justify-content: center;
@@ -2562,6 +2565,9 @@ padding-bottom: 0;
 }
 }
 @media (max-width:800px) {
+		.item_card {
+			outline: 0.5px solid #484847;
+		}
 	.item_hiders {
 		font-size: 2.5vw;
 		line-height: 150%;
