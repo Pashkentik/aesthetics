@@ -2511,6 +2511,9 @@ padding-bottom: 0;
 }
 }
 @media (max-width:800px) {
+	.buy_items_section{
+		padding-top: 6vw;
+	}
 	main .main_wrapper_catalog {
 		width: 94%;
 
@@ -2805,7 +2808,7 @@ padding-bottom: 0;
 		min-height: unset;
 	}
 	.filter_on {
-		top:5%;
+		top:3%;
 	}
 	.item_list li {
 		width: 48%;
