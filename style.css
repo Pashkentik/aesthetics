@@ -2244,6 +2244,11 @@ main .wrapper {
 main {
 	width: 100%;
 }
+.contact_content {
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
 @media (max-width: 1439px) {
 .scrollToTop {
 	right: 2vw;
