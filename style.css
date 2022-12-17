@@ -2325,6 +2325,36 @@ main .main_wrapper_catalog {
 }
 }
 @media (max-width: 1000px) {
+	.item_vlog_sample {
+		padding: 4vw 0 10vw 0;
+	}
+	.item_vlog_sample > div {
+		padding: 0;
+	}
+	.item_vlog_sample > div {
+		gap: 6vw;
+	}
+	.item_vlog > div {
+		gap: 3vw;
+	}
+	.item_vlog {
+		gap: 3vw;
+	}
+	h3 {
+		font-size: 5vw;
+	}
+	.item_vlog p {
+		font-size: 2vw;
+		line-height: 150%;
+	}
+	.item_vlog div > div {
+		padding: 0;
+	}
+	.item_vlog img {
+		height: 100%;
+		width: 50%;
+		align-self: center;
+  }
 	.img_about_grop > div {
 		gap: 20px;
 
@@ -2873,6 +2903,18 @@ padding-bottom: 0;
 	
 }
 @media (max-width:650px) {
+	.item_vlog p {
+		font-size: 4vw;
+	}
+	.item_vlog img {
+		width: 100%;
+	}
+	.item_vlog:nth-of-type(2n) img {
+		order: 0;
+  }
+	.item_vlog > div {
+		flex-direction: column-reverse;
+	}
 	.item_props {
 		gap: 4vw
 	}
