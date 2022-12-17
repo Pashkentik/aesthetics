@@ -3013,8 +3013,6 @@ padding-bottom: 0;
 	
 	.sort_by::after {
 		right: -16px;
-		width: 4vw;
-		height: 1.5vw;
 		background-size: contain;
 	}
 	
