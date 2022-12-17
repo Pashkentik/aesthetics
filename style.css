@@ -3007,9 +3007,6 @@ padding-bottom: 0;
 		justify-content: flex-start;
 		gap:44px
 	}
-	.sort_by {
-		font-size: 14px;
-	}
 	
 	.sort_by::after {
 		right: -16px;
@@ -3020,16 +3017,14 @@ padding-bottom: 0;
 		width: 148px;
 	}
 	.header_content {
-		max-height: 96px;
+		max-height: 86px;
 	}
 	.header_content > a, .header_logo {
 		height:	100%;
 	}
 }
 @media(max-width: 400px) {
-	
-	
-	
+
 	.item_list_group {
 		gap: 12px;
 	}
@@ -3099,7 +3094,9 @@ padding-bottom: 0;
 .bottom_view_content_item img {
 	width: 100%;
 }
-
+.sort_by {
+	font-size: 14px;
+}
 }
 @media (max-width:340px) {
 	.header_links {
