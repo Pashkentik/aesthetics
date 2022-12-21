@@ -3042,7 +3042,7 @@ padding-bottom: 0;
 	padding: 6vw;
 	gap: 4vw;
 }
-
+}
 @media (max-width:650px) {
 	.adress_book_adress_item > div:last-of-type {
 		display: none;
