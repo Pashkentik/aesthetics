@@ -12,8 +12,8 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "flex";
   evt.currentTarget.className += " active_tab";
 }
-
 document.getElementById("defaultOpen").click();
+
 
 function dropdownSortBy() {
   document.getElementById("dropdown_sort").classList.toggle("visible");
@@ -26,6 +26,11 @@ function moreItemsShowMain() {
   document
     .getElementById("bottom_view_content")
     .classList.toggle("more_items_main");
+}
+
+function showMenuMobile() {
+  document.getElementById("mobileHeaderButton").classList.toggle("changeMobileButton");
+  document.getElementById("mobileMenu").classList.toggle("mobileMenu_open");
 }
 
 function moreReviewsShow() {

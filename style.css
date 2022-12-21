@@ -1571,9 +1571,9 @@ footer a:hover {
 	justify-content: space-between;
 	max-width: 928px;
 	align-self: center;
-	gap: 50px;
+	width: 100%;
 }
-.cabinet_tabs a {
+.cabinet_tabs > a:first-of-type {
 	font-weight: 200;
 	font-size: 26px;
 	line-height: 36px;
@@ -1587,7 +1587,7 @@ footer a:hover {
 	border-bottom: 1px solid #484847;
 	text-shadow: 0 0 .85px #333, 0 0 .85px #333;
 }
-.cabinet_tabs a:hover{
+.tablinks:hover{
 	transform: translateY(-6px);
 	transition: transform 1s;
 }
@@ -1605,6 +1605,7 @@ border-bottom: 1px solid #484847;
 .tabs_contact_information >form {
 	display: flex;
 	justify-content: space-between;
+	gap: 20px;
 }
 .tabs_contact_information > form > div {
 	min-width: 368px;
@@ -1824,7 +1825,8 @@ padding: 0 5px;
 }
 .tabs_contact_information, .tabs_adress_book, .tabs_wish_list {
 	align-self: center;
-	width: 928px;
+	max-width: 928px;
+	width: 100%;
 }
 .tabs_buy_history {
 	display: flex;
@@ -1836,13 +1838,14 @@ padding: 0 5px;
 }
 .tabs_buy_history > div  {
 	display: flex;
-	gap: 84px;
 	width: 100%;
 	max-width: 1016px;
 	flex-wrap: wrap;
 	max-height: 430px;
 	overflow: hidden;
 	transition: max-height 1s ease-out;
+	justify-content: space-around;
+	gap: 20px;
 }
 .tabs_buy_history > div > div  {
 	width: 466px;
@@ -1969,9 +1972,14 @@ font-weight: 400;
 .confirm_btns .active_tab > span {
 	color: #FFFFFF;
 	background-color: #4B6049;
+
 }
+
 .tablinks {
 	cursor: pointer;
+	white-space: nowrap;
+	position: relative;
+	transition: all 0.8s;
 }
 .confirm_item_list {
 	display: flex;
@@ -2200,7 +2208,9 @@ background-color: #4B6049;
    -ms-transform: translate(-50%);
    transform: translate(-50%);
 }
-
+.cabinet_content > .accordion_cabinet_mobile { 
+	display: none;
+}
 .itc-slider__indicator {
 	width: 18px;
 	height: 18px;
@@ -2506,6 +2516,63 @@ main .main_wrapper_catalog {
 	}
 }
 @media (max-width: 900px) {
+	.tabs_contact_information > form > div {
+		height: fit-content;
+		min-height: unset;
+	}
+	.mobile_group_container div:last-of-type div .mobile_white_button {
+		display: block;
+	}
+	.mobile_group_container > div:last-of-type >div {
+		display: flex; 
+		justify-content: space-evenly;
+	}
+	.tabs_contact_information >form {
+		flex-direction: column;
+		gap: 3vw;
+	}
+	.tabs_contact_information > form > div {
+		gap: 3vw;
+	}
+	.mobile_cab_tabs {
+		flex-direction: column;
+	}
+	.mobile_group_container {
+		gap: 20px;
+		display: flex;
+		flex-direction: column;
+	}
+	.mobile_group_container div:last-of-type form .regular_white_button {
+		display: none;
+	}
+	.mobile_group_container > a:first-of-type {
+		border: 0.5px solid #000000;
+		width: 100%;
+		max-width: unset;
+		display: flex;
+		padding: 10px;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.mobile_group_container > a:first-of-type::after {
+		content: '';
+		background: url(./img/arrow_down.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		top: 0;
+		left: 0;
+		width: 22px;
+		height: 8px;
+		transition: all 0.5s;
+	}
+	.mobile_group_container > .active_tab:first-of-type::after {
+		transform: rotate(-180deg);
+		transition: all 0.5s;
+	}
+	.cabinet_content > div:first-of-type {
+		display: none;
+	}
 	.item_card {
 		justify-content: space-between;
 	}
@@ -2597,6 +2664,15 @@ padding-bottom: 0;
 	transition: all 0.3s;
 	margin: 0;
 	transform: scale(1.1);
+}
+.cabinet_content > .accordion_cabinet_mobile { 
+	display: flex;
+}
+.mobile_cab_tabs {
+	gap: 3vw;
+}
+.tabs_wish_list {
+	padding: 0;
 }
 }
 @media (max-width:800px) {
@@ -2728,8 +2804,15 @@ padding-bottom: 0;
 		position: absolute;
 		left: 50%;
 		height: 6vw;
+	}.tabs_wish_list {
+		margin: 0;
 	}
 	
+
+	.add_height {
+		max-height: 1000px;
+		
+	}
 	.regular_button {
 		width: 25vw;
 		height: 7vw;
@@ -2740,12 +2823,18 @@ padding-bottom: 0;
 		margin: 0 0 1vw 1vw;
 		border: 0.5px solid #484847;
 	}
+	.tabs_contact_information { 
+		transition: all 1s;
+	}
 	.regular_button:hover {
 		margin: 0 0 1vw 1vw;
 	}
 	.regular_white_button {
 		border: 1px solid #484847;
 	}
+	.mobile_group_container .tabcontent {
+		display: flex;
+	} 
 	.mobile_menu {
 		position: absolute;
 		max-width: 300px;
@@ -2905,9 +2994,103 @@ padding-bottom: 0;
 	.footer_social_white {
 		gap: 20px;
 	}
+	.reg_btn_item {
+		background: #4B6049;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		line-height: 150%;
+		color: #FFFBF5;
+		position: relative;
+		width: 97px;
+		height: 25px;
+		margin: 6px 6px 0 0;
+		transition-property: margin;
+		transition-duration: 0.7s;
+	}
+	.cabinet_content h2 {
+		font-weight: 600;
+		font-size: 5vw;
+}
+.tablinks {
+	font-size: 3.5vw;
+	height: 8vw;
+}
+.cabinet_content > .accordion_cabinet_mobile{
+	min-height: unset;
+	height: fit-content;
+}
+.cabinet_content {
+	min-height: unset;
+	padding: 30px 0
+}
+.wish_list_item > div {
+	flex-direction: column;
 	
 }
+.wish_list_item {
+	min-height: fit-content;
+	padding: 1vw;
+}
+.wish_list_item div div:last-of-type {
+	align-items: center
+}
+.wish_list_item div div:last-of-type a:first-of-type {
+	align-self: flex-start;
+}
+.tabs_buy_history {
+	padding: 6vw;
+	gap: 4vw;
+}
+
 @media (max-width:650px) {
+	.adress_book_adress_item > div:last-of-type {
+		display: none;
+	}
+	.adress_book_adress_item {
+		min-width: unset;
+	}
+	.adress_book_adress_item > div:first-of-type p {
+		font-size: 3vw;
+	}
+	.adress_book_adress_item > div:first-of-type span {
+		height: 8vw;
+		width: 9vw;
+		font-size: 6vw;
+		line-height: 120%;
+	}
+	.tabs_adress_book > form > div:last-of-type {
+		max-width: 100%;
+	}
+	.tabs_adress_book > form > div:first-of-type {
+		flex-direction: row;
+	}
+	.tabs_adress_book > form { 
+		flex-direction: column;
+		align-items: center;
+	}
+	.tabs_contact_information > form > div {
+		min-width: unset;
+	}
+	.buy_history_item_scroll_item > div>div:first-of-type {
+		overflow: hidden;
+	}
+	.history_item_rating > div {
+		display: none;
+	}
+	.history_item_rating {
+		min-width: 30%;
+	}
+	.buy_history_item_scroll_item {
+		height: unset;
+		min-height: fit-content;
+	}
+	.buy_history_item_scroll {
+		padding: 1vw;
+	}
+	.wish_list_img_group > div{
+		display: none;
+	}
 	.item_vlog p {
 		font-size: 4vw;
 	}

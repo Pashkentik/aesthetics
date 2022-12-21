@@ -23,8 +23,18 @@
                <a href="./cabinet.html" class="header_menu_link"></a>
                <a href="./wish_list.html" class="header_menu_link"></a>
                <a href="./deal_confirm.html" class="header_menu_link"></a>
+               <a href="#" onclick="showMenuMobile()" id="mobileHeaderButton" class="header_menu_link_mobile"><span></span></a>
             </div> 
          </div>
+      </div>
+      <div id="mobileMenu" class="mobile_menu">
+         <div><a href="./index.html"><img src="./img/footer_white_logo.svg" alt="main page logo"></a> <a onclick="showMenuMobile()"><img src="./img/delete 360.png" alt="close button"></a></div>
+         <ul>
+            <li><a href="./catalog.html">Каталог</a></li>
+            <li><a href="./delivery.html">Доставка та оплата</a></li>
+            <li><a href="./vlog.html">Блог</a></li>
+            <li><a href="./contact.html">Контакти</a></li>
+         </ul>
       </div>
    </header>
    <main>
@@ -760,6 +770,746 @@
                <a class="regular_white_button" onclick="moreHistoryItems()"><span class="white_button_arrow_down"></span>Показати ще</a>
             </div>
          </div>
+         <div class="accordion_cabinet_mobile">
+            <div>
+               <div id="#accordion_1" class="cabinet_tabs mobile_cab_tabs tab">
+                     <div class="mobile_group_container">
+                        <a class="tablinks" onclick="openTab(event, 'cont_inform_mob')" id="defaultOpen">Контактна інформація</a>
+                        <div id ="cont_inform_mob" class="tabs_contact_information tabcontent">
+                           <form>
+                              <div>
+                                 <div>
+                                    <label for="name">Ваше ім’я</label>
+                                    <input class="cabinet_input_regular" type="text" id="name" placeholder="Світлана">
+                                 </div>
+                                 <div>
+                                    <label for="last_name">Ваше прізвище</label>
+                                    <input class="cabinet_input_regular" type="text" id="last_name" placeholder="Шевченко">
+                                 </div>
+                                 <div>
+                                    <label for="_mail">E-mail</label>
+                                    <input class="cabinet_input_regular" type="email" id="_mail" placeholder="shevSv002@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                                 </div>
+                              </div>
+                              <div>
+                                 <div>
+                                    <label for="phone">Номер телефону</label>
+                                    <input class="cabinet_input_regular" type="text" id="phone" placeholder="+38(097)711-43-40">
+                                 </div>
+                                 <div>
+                                    <label for="birth_date">Дата народження</label>
+                                    <input class="cabinet_input_regular" type="date" id="birth_date" value="1989-10-08">
+                                 </div>
+                                 <a class="regular_white_button"><span class="white_button_arrow"></span>Вийти</a>
+                              </div>
+                           </form>
+                           <div>
+                              <a href="#" class="regular_button">Зберегти</a>
+                              <a class="regular_white_button"><span class="white_button_arrow mobile_white_button"></span>Вийти</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="mobile_group_container">
+                        <a class="tablinks" onclick="openTab(event, 'adress_book_mob')">Адресна книга</a>
+                        <div id ="adress_book_mob" class="tabcontent tabs_adress_book">
+                           <form>
+                              <div>
+                                 <div class="adress_book_adress_item">
+                                    <div>
+                                       <span>1</span>
+                                       <div>
+                                          <p>Шевченко Світлана</p>
+                                          <p>Місто КиЇв</p>
+                                          <p>Градинська 11б, 85</p>
+                                          <p>+38 068 564 77 99</p>
+                                       </div>
+                                    </div>
+                                    <div>
+                                       <a href="">Редагувати</a>
+                                       <a href="">Видалити</a>
+                                    </div>
+                                 </div>
+                                 <div class="adress_book_adress_item">
+                                    <div>
+                                       <span>2</span>
+                                       <div>
+                                          <p>Шевченко Світлана</p>
+                                          <p>Місто Харків</p>
+                                          <p>Трінклера 18, 65</p>
+                                          <p>+38 068 564 77 99</p>
+                                       </div>
+                                    </div>
+                                    <div>
+                                       <a href="">Редагувати</a>
+                                       <a href="">Видалити</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div>
+                                 <h4>Додати нову адресу:</h4>
+                                 <input class="cabinet_input_regular" type="text"  placeholder="ПІБ">
+                                 <input class="cabinet_input_regular" type="text"  placeholder="Місто">
+                                 <div>
+                                    <input class="cabinet_input_regular" type="text"  placeholder="Вулиця">
+                                    <input class="cabinet_input_regular" type="text"  placeholder="Корпус">
+                                    <input class="cabinet_input_regular" type="text"  placeholder="Квартира">
+                                 </div>
+                                 <input class="cabinet_input_regular" type="text"  placeholder="Поштове відділення">
+                                 <input class="cabinet_input_regular" type="tel"  placeholder="Номер телефону">
+                              </div>
+                           </form>
+                           <div>
+                              <a href="#" class="regular_button">Зберегти</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="mobile_group_container">
+                        <a class="tablinks" onclick="openTab(event, 'wish_list_mob')" id="wish_list_def">Список бажань</a>
+                        <div id ="wish_list_mob" class="tabcontent tabs_wish_list">
+                           <div class="wish_list_item">
+                              <div>
+                                 <div>
+                                    <div class="wish_list_img_group">
+                                          <img src="./img/catalog_item_1.png" alt="logo image">
+                                          <div>
+                                             <div class="rating-area">
+                                                <input type="radio" id="star-5" name="rating" value="5">
+                                                <label for="star-5" title="Оценка «5»"></label>
+                                                <input type="radio" id="star-4" name="rating" value="4">
+                                                <label for="star-4" title="Оценка «4»"></label>
+                                                <input type="radio" id="star-3" name="rating" value="3">
+                                                <label for="star-3" title="Оценка «3»"></label>
+                                                <input type="radio" id="star-2" name="rating" value="2">
+                                                <label for="star-2" title="Оценка «2»"></label>
+                                                <input type="radio" id="star-1" name="rating" value="1">
+                                                <label for="star-1" title="Оценка «1»"></label>
+                                             </div>
+                                             <p>В наявності</p>
+                                       </div>
+                                    </div>
+                                       <p>Флюїд для обличчя
+                                          для сухої шкіри</p>
+                                 </div>
+                                 <p>630 грн</p>
+                                 <div>
+                                    <a href="" class="regular_button reg_btn_item">В кошик</a>
+                                    <a href="">Видалити</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="wish_list_item">
+                              <div>
+                                 <div>
+                                    <div class="wish_list_img_group">
+                                          <img src="./img/catalog_item_9.png" alt="logo image">
+                                          <div>
+                                             <div class="rating-area">
+                                                <input type="radio" id="star-5" name="rating" value="5">
+                                                <label for="star-5" title="Оценка «5»"></label>
+                                                <input type="radio" id="star-4" name="rating" value="4">
+                                                <label for="star-4" title="Оценка «4»"></label>
+                                                <input type="radio" id="star-3" name="rating" value="3">
+                                                <label for="star-3" title="Оценка «3»"></label>
+                                                <input type="radio" id="star-2" name="rating" value="2">
+                                                <label for="star-2" title="Оценка «2»"></label>
+                                                <input type="radio" id="star-1" name="rating" value="1">
+                                                <label for="star-1" title="Оценка «1»"></label>
+                                             </div>
+                                             <p>Залишилось 3 шт</p>
+                                       </div>
+                                    </div>
+                                       <p>Матуючий денний крем
+                                          для жирної шкіри</p>
+                                 </div>
+                                 <p>680 грн </p>
+                                 <div>
+                                    <a href="" class="regular_button reg_btn_item">В кошик</a>
+                                    <a href="">Видалити</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="wish_list_item">
+                              <div>
+                                 <div>
+                                    <div class="wish_list_img_group">
+                                          <img src="./img/catalog_item_4.png" alt="logo image">
+                                          <div>
+                                             <div class="rating-area">
+                                                <input type="radio" id="star-5" name="rating" value="5">
+                                                <label for="star-5" title="Оценка «5»"></label>
+                                                <input type="radio" id="star-4" name="rating" value="4">
+                                                <label for="star-4" title="Оценка «4»"></label>
+                                                <input type="radio" id="star-3" name="rating" value="3">
+                                                <label for="star-3" title="Оценка «3»"></label>
+                                                <input type="radio" id="star-2" name="rating" value="2">
+                                                <label for="star-2" title="Оценка «2»"></label>
+                                                <input type="radio" id="star-1" name="rating" value="1">
+                                                <label for="star-1" title="Оценка «1»"></label>
+                                             </div>
+                                             <p>В наявності</p>
+                                       </div>
+                                    </div>
+                                       <p>Зволожуюча сироватка
+                                          для нормальної шкіри</p>
+                                 </div>
+                                 <p>480 грн</p>
+                                 <div>
+                                    <a href="" class="regular_button reg_btn_item">В кошик</a>
+                                    <a href="">Видалити</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="wish_list_item">
+                              <div>
+                                 <div>
+                                    <div class="wish_list_img_group">
+                                          <img src="./img/catalog_item_8.png" alt="logo image">
+                                          <div>
+                                             <div class="rating-area">
+                                                <input type="radio" id="star-5" name="rating" value="5">
+                                                <label for="star-5" title="Оценка «5»"></label>
+                                                <input type="radio" id="star-4" name="rating" value="4">
+                                                <label for="star-4" title="Оценка «4»"></label>
+                                                <input type="radio" id="star-3" name="rating" value="3">
+                                                <label for="star-3" title="Оценка «3»"></label>
+                                                <input type="radio" id="star-2" name="rating" value="2">
+                                                <label for="star-2" title="Оценка «2»"></label>
+                                                <input type="radio" id="star-1" name="rating" value="1">
+                                                <label for="star-1" title="Оценка «1»"></label>
+                                             </div>
+                                             <p>В наявності</p>
+                                       </div>
+                                    </div>
+                                       <p>Набір
+                                          Денний та нічний крем</p>
+                                 </div>
+                                 <p>1230 грн</p>
+                                 <div>
+                                    <a href="" class="regular_button reg_btn_item">В кошик</a>
+                                    <a href="">Видалити</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="wish_list_item">
+                              <div>
+                                 <div>
+                                    <div class="wish_list_img_group">
+                                          <img src="./img/catalog_item_2.png" alt="logo image">
+                                          <div>
+                                             <div class="rating-area">
+                                                <input type="radio" id="star-5" name="rating" value="5">
+                                                <label for="star-5" title="Оценка «5»"></label>
+                                                <input type="radio" id="star-4" name="rating" value="4">
+                                                <label for="star-4" title="Оценка «4»"></label>
+                                                <input type="radio" id="star-3" name="rating" value="3">
+                                                <label for="star-3" title="Оценка «3»"></label>
+                                                <input type="radio" id="star-2" name="rating" value="2">
+                                                <label for="star-2" title="Оценка «2»"></label>
+                                                <input type="radio" id="star-1" name="rating" value="1">
+                                                <label for="star-1" title="Оценка «1»"></label>
+                                             </div>
+                                             <p>В наявності</p>
+                                       </div>
+                                    </div>
+                                       <p>Антиоксидантний 
+                                          крем для обличчя</p>
+                                 </div>
+                                 <p>850 грн</p>
+                                 <div>
+                                    <a href="" class="regular_button reg_btn_item">В кошик</a>
+                                    <a href="">Видалити</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="mobile_group_container">
+                        <a class="tablinks" onclick="openTab(event, 'buy_history_mob')">Історія замовлень</a>
+                        <div id ="buy_history_mob" class="tabcontent tabs_buy_history">
+                           <div id="dropdown_history">
+                              <div class="buy_history_item">
+                                 <p>
+                                    Замовлення №5647
+                                 </p>
+                                 <div>
+                                    <div>
+                                       <p>Дата замовлення:</p>
+                                       <p>9.08.2022</p>
+                                    </div>
+                                    <div>
+                                       <p>Статус:</p>
+                                       <p>В обробці</p>
+                                    </div>
+                                 </div>
+                                 <div class="buy_history_item_scroll">
+                                    <div class="buy_history_item_scroll_item">
+                                       <img src="./img/catalog_item_10.png" alt="history item">
+                                       <div>
+                                          <div>
+                                             <p>Нічний антивіковій крем
+                                                для сухої шкіри</p>
+                                             <p>1 шт</p>
+                                          </div>
+                                          <div class="history_item_rating">
+                                             <div class="rating-area">
+                                                <input type="radio" id="star-5" name="rating" value="5">
+                                                <label for="star-5" title="Оценка «5»"></label>
+                                                <input type="radio" id="star-4" name="rating" value="4">
+                                                <label for="star-4" title="Оценка «4»"></label>
+                                                <input type="radio" id="star-3" name="rating" value="3">
+                                                <label for="star-3" title="Оценка «3»"></label>
+                                                <input type="radio" id="star-2" name="rating" value="2">
+                                                <label for="star-2" title="Оценка «2»"></label>
+                                                <input type="radio" id="star-1" name="rating" value="1">
+                                                <label for="star-1" title="Оценка «1»"></label>
+                                             </div>
+                                             <p>860 грн</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="buy_history_item_scroll_item">
+                                       <img src="./img/catalog_item_11.png" alt="history item">
+                                       <div>
+                                          <div>
+                                             <p>Гель для зняття макіяжу</p>
+                                             <p>2 шт</p>
+                                          </div>
+                                          <div class="history_item_rating">
+                                             <div class="rating-area">
+                                                <input type="radio" id="star-5" name="rating" value="5">
+                                                <label for="star-5" title="Оценка «5»"></label>
+                                                <input type="radio" id="star-4" name="rating" value="4">
+                                                <label for="star-4" title="Оценка «4»"></label>
+                                                <input type="radio" id="star-3" name="rating" value="3">
+                                                <label for="star-3" title="Оценка «3»"></label>
+                                                <input type="radio" id="star-2" name="rating" value="2">
+                                                <label for="star-2" title="Оценка «2»"></label>
+                                                <input type="radio" id="star-1" name="rating" value="1">
+                                                <label for="star-1" title="Оценка «1»"></label>
+                                             </div>
+                                             <p>1460 грн</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="buy_history_item_scroll_item">
+                                       <img src="./img/catalog_item_12.png" alt="history item">
+                                       <div>
+                                          <div>
+                                             <p>Антивікова сироватка
+                                                для зони навколо очей</p>
+                                             <p>1 шт</p>
+                                          </div>
+                                          <div class="history_item_rating">
+                                             <div class="rating-area">
+                                                <input type="radio" id="star-5" name="rating" value="5">
+                                                <label for="star-5" title="Оценка «5»"></label>
+                                                <input type="radio" id="star-4" name="rating" value="4">
+                                                <label for="star-4" title="Оценка «4»"></label>
+                                                <input type="radio" id="star-3" name="rating" value="3">
+                                                <label for="star-3" title="Оценка «3»"></label>
+                                                <input type="radio" id="star-2" name="rating" value="2">
+                                                <label for="star-2" title="Оценка «2»"></label>
+                                                <input type="radio" id="star-1" name="rating" value="1">
+                                                <label for="star-1" title="Оценка «1»"></label>
+                                             </div>
+                                             <p>900 грн</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="buy_history_item_scroll_item">
+                                       <img src="./img/catalog_item_5.png" alt="history item">
+                                       <div>
+                                          <div>
+                                             <p>
+                                                Маска-скрап для лиця нічна</p>
+                                             <p>1 шт</p>
+                                          </div>
+                                          <div class="history_item_rating">
+                                             <div class="rating-area">
+                                                <input type="radio" id="star-5" name="rating" value="5">
+                                                <label for="star-5" title="Оценка «5»"></label>
+                                                <input type="radio" id="star-4" name="rating" value="4">
+                                                <label for="star-4" title="Оценка «4»"></label>
+                                                <input type="radio" id="star-3" name="rating" value="3">
+                                                <label for="star-3" title="Оценка «3»"></label>
+                                                <input type="radio" id="star-2" name="rating" value="2">
+                                                <label for="star-2" title="Оценка «2»"></label>
+                                                <input type="radio" id="star-1" name="rating" value="1">
+                                                <label for="star-1" title="Оценка «1»"></label>
+                                             </div>
+                                             <p>444 грн</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <p>
+                                    Загальна сумма: 3220 грн
+                                 </p>
+                              </div>
+                              <div class="buy_history_item">
+                                 <p>
+                                    Замовлення №4596
+                                 </p>
+                                 <div>
+                                    <div>
+                                       <p>Дата замовлення:</p>
+                                       <p>14.07.2022</p>
+                                    </div>
+                                    <div>
+                                       <p>Статус:</p>
+                                       <p>В обробці</p>
+                                    </div>
+                                 </div>
+                                 <div class="buy_history_item_scroll">
+                                    <div class="buy_history_item_scroll_item">
+                                       <img src="./img/catalog_item_13.png" alt="history item">
+                                       <div>
+                                          <div>
+                                             <p>Лосьон для нормальної
+                                                та комбінованої шкіри</p>
+                                             <p>1 шт</p>
+                                          </div>
+                                          <div class="history_item_rating">
+                                             <div class="rating-area">
+                                                <input type="radio" id="star-5" name="rating" value="5">
+                                                <label for="star-5" title="Оценка «5»"></label>
+                                                <input type="radio" id="star-4" name="rating" value="4">
+                                                <label for="star-4" title="Оценка «4»"></label>
+                                                <input type="radio" id="star-3" name="rating" value="3">
+                                                <label for="star-3" title="Оценка «3»"></label>
+                                                <input type="radio" id="star-2" name="rating" value="2">
+                                                <label for="star-2" title="Оценка «2»"></label>
+                                                <input type="radio" id="star-1" name="rating" value="1">
+                                                <label for="star-1" title="Оценка «1»"></label>
+                                             </div>
+                                             <p>1050 грн</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="buy_history_item_scroll_item">
+                                       <img src="./img/catalog_item_14.png" alt="history item">
+                                       <div>
+                                          <div>
+                                             <p>Скраб для чутливої шкіри</p>
+                                             <p>2 шт</p>
+                                          </div>
+                                          <div class="history_item_rating">
+                                             <div class="rating-area">
+                                                <input type="radio" id="star-5" name="rating" value="5">
+                                                <label for="star-5" title="Оценка «5»"></label>
+                                                <input type="radio" id="star-4" name="rating" value="4">
+                                                <label for="star-4" title="Оценка «4»"></label>
+                                                <input type="radio" id="star-3" name="rating" value="3">
+                                                <label for="star-3" title="Оценка «3»"></label>
+                                                <input type="radio" id="star-2" name="rating" value="2">
+                                                <label for="star-2" title="Оценка «2»"></label>
+                                                <input type="radio" id="star-1" name="rating" value="1">
+                                                <label for="star-1" title="Оценка «1»"></label>
+                                             </div>
+                                             <p>890 грн</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="buy_history_item_scroll_item">
+                                       <img src="./img/catalog_item_15.png" alt="history item">
+                                       <div>
+                                          <div>
+                                             <p>Гель для глубокого 
+                                                очищення шкіри обличчя</p>
+                                             <p>1 шт</p>
+                                          </div>
+                                          <div class="history_item_rating">
+                                             <div class="rating-area">
+                                                <input type="radio" id="star-5" name="rating" value="5">
+                                                <label for="star-5" title="Оценка «5»"></label>
+                                                <input type="radio" id="star-4" name="rating" value="4">
+                                                <label for="star-4" title="Оценка «4»"></label>
+                                                <input type="radio" id="star-3" name="rating" value="3">
+                                                <label for="star-3" title="Оценка «3»"></label>
+                                                <input type="radio" id="star-2" name="rating" value="2">
+                                                <label for="star-2" title="Оценка «2»"></label>
+                                                <input type="radio" id="star-1" name="rating" value="1">
+                                                <label for="star-1" title="Оценка «1»"></label>
+                                             </div>
+                                             <p>777 грн</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="buy_history_item_scroll_item">
+                                       <img src="./img/catalog_item_2.png" alt="history item">
+                                       <div>
+                                          <div>
+                                             <p>
+                                                Маска-скрап для лиця нічна</p>
+                                             <p>1 шт</p>
+                                          </div>
+                                          <div class="history_item_rating">
+                                             <div class="rating-area">
+                                                <input type="radio" id="star-5" name="rating" value="5">
+                                                <label for="star-5" title="Оценка «5»"></label>
+                                                <input type="radio" id="star-4" name="rating" value="4">
+                                                <label for="star-4" title="Оценка «4»"></label>
+                                                <input type="radio" id="star-3" name="rating" value="3">
+                                                <label for="star-3" title="Оценка «3»"></label>
+                                                <input type="radio" id="star-2" name="rating" value="2">
+                                                <label for="star-2" title="Оценка «2»"></label>
+                                                <input type="radio" id="star-1" name="rating" value="1">
+                                                <label for="star-1" title="Оценка «1»"></label>
+                                             </div>
+                                             <p>444 грн</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <p>
+                                    Загальна сумма: 3220 грн
+                                 </p>
+                              </div>
+                              <div class="buy_history_item">
+                                 <p>
+                                    Замовлення №5647
+                                 </p>
+                                 <div>
+                                    <div>
+                                       <p>Дата замовлення:</p>
+                                       <p>9.08.2022</p>
+                                    </div>
+                                    <div>
+                                       <p>Статус:</p>
+                                       <p>В обробці</p>
+                                    </div>
+                                 </div>
+                                 <div class="buy_history_item_scroll">
+                                    <div class="buy_history_item_scroll_item">
+                                       <img src="./img/catalog_item_10.png" alt="history item">
+                                       <div>
+                                          <div>
+                                             <p>Нічний антивіковій крем
+                                                для сухої шкіри</p>
+                                             <p>1 шт</p>
+                                          </div>
+                                          <div class="history_item_rating">
+                                             <div class="rating-area">
+                                                <input type="radio" id="star-5" name="rating" value="5">
+                                                <label for="star-5" title="Оценка «5»"></label>
+                                                <input type="radio" id="star-4" name="rating" value="4">
+                                                <label for="star-4" title="Оценка «4»"></label>
+                                                <input type="radio" id="star-3" name="rating" value="3">
+                                                <label for="star-3" title="Оценка «3»"></label>
+                                                <input type="radio" id="star-2" name="rating" value="2">
+                                                <label for="star-2" title="Оценка «2»"></label>
+                                                <input type="radio" id="star-1" name="rating" value="1">
+                                                <label for="star-1" title="Оценка «1»"></label>
+                                             </div>
+                                             <p>860 грн</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="buy_history_item_scroll_item">
+                                       <img src="./img/catalog_item_11.png" alt="history item">
+                                       <div>
+                                          <div>
+                                             <p>Гель для зняття макіяжу</p>
+                                             <p>2 шт</p>
+                                          </div>
+                                          <div class="history_item_rating">
+                                             <div class="rating-area">
+                                                <input type="radio" id="star-5" name="rating" value="5">
+                                                <label for="star-5" title="Оценка «5»"></label>
+                                                <input type="radio" id="star-4" name="rating" value="4">
+                                                <label for="star-4" title="Оценка «4»"></label>
+                                                <input type="radio" id="star-3" name="rating" value="3">
+                                                <label for="star-3" title="Оценка «3»"></label>
+                                                <input type="radio" id="star-2" name="rating" value="2">
+                                                <label for="star-2" title="Оценка «2»"></label>
+                                                <input type="radio" id="star-1" name="rating" value="1">
+                                                <label for="star-1" title="Оценка «1»"></label>
+                                             </div>
+                                             <p>1460 грн</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="buy_history_item_scroll_item">
+                                       <img src="./img/catalog_item_12.png" alt="history item">
+                                       <div>
+                                          <div>
+                                             <p>Антивікова сироватка
+                                                для зони навколо очей</p>
+                                             <p>1 шт</p>
+                                          </div>
+                                          <div class="history_item_rating">
+                                             <div class="rating-area">
+                                                <input type="radio" id="star-5" name="rating" value="5">
+                                                <label for="star-5" title="Оценка «5»"></label>
+                                                <input type="radio" id="star-4" name="rating" value="4">
+                                                <label for="star-4" title="Оценка «4»"></label>
+                                                <input type="radio" id="star-3" name="rating" value="3">
+                                                <label for="star-3" title="Оценка «3»"></label>
+                                                <input type="radio" id="star-2" name="rating" value="2">
+                                                <label for="star-2" title="Оценка «2»"></label>
+                                                <input type="radio" id="star-1" name="rating" value="1">
+                                                <label for="star-1" title="Оценка «1»"></label>
+                                             </div>
+                                             <p>900 грн</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="buy_history_item_scroll_item">
+                                       <img src="./img/catalog_item_5.png" alt="history item">
+                                       <div>
+                                          <div>
+                                             <p>
+                                                Маска-скрап для лиця нічна</p>
+                                             <p>1 шт</p>
+                                          </div>
+                                          <div class="history_item_rating">
+                                             <div class="rating-area">
+                                                <input type="radio" id="star-5" name="rating" value="5">
+                                                <label for="star-5" title="Оценка «5»"></label>
+                                                <input type="radio" id="star-4" name="rating" value="4">
+                                                <label for="star-4" title="Оценка «4»"></label>
+                                                <input type="radio" id="star-3" name="rating" value="3">
+                                                <label for="star-3" title="Оценка «3»"></label>
+                                                <input type="radio" id="star-2" name="rating" value="2">
+                                                <label for="star-2" title="Оценка «2»"></label>
+                                                <input type="radio" id="star-1" name="rating" value="1">
+                                                <label for="star-1" title="Оценка «1»"></label>
+                                             </div>
+                                             <p>444 грн</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <p>
+                                    Загальна сумма: 3220 грн
+                                 </p>
+                              </div>
+                              <div class="buy_history_item">
+                                 <p>
+                                    Замовлення №4596
+                                 </p>
+                                 <div>
+                                    <div>
+                                       <p>Дата замовлення:</p>
+                                       <p>14.07.2022</p>
+                                    </div>
+                                    <div>
+                                       <p>Статус:</p>
+                                       <p>В обробці</p>
+                                    </div>
+                                 </div>
+                                 <div class="buy_history_item_scroll">
+                                    <div class="buy_history_item_scroll_item">
+                                       <img src="./img/catalog_item_13.png" alt="history item">
+                                       <div>
+                                          <div>
+                                             <p>Лосьон для нормальної
+                                                та комбінованої шкіри</p>
+                                             <p>1 шт</p>
+                                          </div>
+                                          <div class="history_item_rating">
+                                             <div class="rating-area">
+                                                <input type="radio" id="star-5" name="rating" value="5">
+                                                <label for="star-5" title="Оценка «5»"></label>
+                                                <input type="radio" id="star-4" name="rating" value="4">
+                                                <label for="star-4" title="Оценка «4»"></label>
+                                                <input type="radio" id="star-3" name="rating" value="3">
+                                                <label for="star-3" title="Оценка «3»"></label>
+                                                <input type="radio" id="star-2" name="rating" value="2">
+                                                <label for="star-2" title="Оценка «2»"></label>
+                                                <input type="radio" id="star-1" name="rating" value="1">
+                                                <label for="star-1" title="Оценка «1»"></label>
+                                             </div>
+                                             <p>1050 грн</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="buy_history_item_scroll_item">
+                                       <img src="./img/catalog_item_14.png" alt="history item">
+                                       <div>
+                                          <div>
+                                             <p>Скраб для чутливої шкіри</p>
+                                             <p>2 шт</p>
+                                          </div>
+                                          <div class="history_item_rating">
+                                             <div class="rating-area">
+                                                <input type="radio" id="star-5" name="rating" value="5">
+                                                <label for="star-5" title="Оценка «5»"></label>
+                                                <input type="radio" id="star-4" name="rating" value="4">
+                                                <label for="star-4" title="Оценка «4»"></label>
+                                                <input type="radio" id="star-3" name="rating" value="3">
+                                                <label for="star-3" title="Оценка «3»"></label>
+                                                <input type="radio" id="star-2" name="rating" value="2">
+                                                <label for="star-2" title="Оценка «2»"></label>
+                                                <input type="radio" id="star-1" name="rating" value="1">
+                                                <label for="star-1" title="Оценка «1»"></label>
+                                             </div>
+                                             <p>890 грн</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="buy_history_item_scroll_item">
+                                       <img src="./img/catalog_item_15.png" alt="history item">
+                                       <div>
+                                          <div>
+                                             <p>Гель для глубокого 
+                                                очищення шкіри обличчя</p>
+                                             <p>1 шт</p>
+                                          </div>
+                                          <div class="history_item_rating">
+                                             <div class="rating-area">
+                                                <input type="radio" id="star-5" name="rating" value="5">
+                                                <label for="star-5" title="Оценка «5»"></label>
+                                                <input type="radio" id="star-4" name="rating" value="4">
+                                                <label for="star-4" title="Оценка «4»"></label>
+                                                <input type="radio" id="star-3" name="rating" value="3">
+                                                <label for="star-3" title="Оценка «3»"></label>
+                                                <input type="radio" id="star-2" name="rating" value="2">
+                                                <label for="star-2" title="Оценка «2»"></label>
+                                                <input type="radio" id="star-1" name="rating" value="1">
+                                                <label for="star-1" title="Оценка «1»"></label>
+                                             </div>
+                                             <p>777 грн</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="buy_history_item_scroll_item">
+                                       <img src="./img/catalog_item_2.png" alt="history item">
+                                       <div>
+                                          <div>
+                                             <p>
+                                                Маска-скрап для лиця нічна</p>
+                                             <p>1 шт</p>
+                                          </div>
+                                          <div class="history_item_rating">
+                                             <div class="rating-area">
+                                                <input type="radio" id="star-5" name="rating" value="5">
+                                                <label for="star-5" title="Оценка «5»"></label>
+                                                <input type="radio" id="star-4" name="rating" value="4">
+                                                <label for="star-4" title="Оценка «4»"></label>
+                                                <input type="radio" id="star-3" name="rating" value="3">
+                                                <label for="star-3" title="Оценка «3»"></label>
+                                                <input type="radio" id="star-2" name="rating" value="2">
+                                                <label for="star-2" title="Оценка «2»"></label>
+                                                <input type="radio" id="star-1" name="rating" value="1">
+                                                <label for="star-1" title="Оценка «1»"></label>
+                                             </div>
+                                             <p>444 грн</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <p>
+                                    Загальна сумма: 3220 грн
+                                 </p>
+                              </div>
+                           </div>
+                           <a class="regular_white_button" onclick="moreHistoryItems()"><span class="white_button_arrow_down"></span>Показати ще</a>
+                        </div>
+                     </div>
+               </div>
+            </div>
+         </div>
          </section>
       </div>
    </main>
@@ -809,5 +1559,6 @@
       <img src="./img/to_top_arrow.svg" alt="arrow">
    </a>
    <script src="./tab_changer.js"></script>
+   <script src="./tab_changer_mob.js"></script>
 </body>
 </html>
