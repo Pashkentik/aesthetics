@@ -8,6 +8,11 @@
    src: url('./fonts/Candara.woff') format('woff'),
 	 	  url('./fonts/Candara.woff2') format('woff2');
 }
+@font-face {
+   font-family: 'candaraLight';
+   src: url('./fonts/Candara-Light.woff') format('woff'),
+	 	  url('./fonts/Candara-Light.woff2') format('woff2');
+}
 
 body{
 	margin: 0;
@@ -207,6 +212,7 @@ h3 {
 }
 
 .header_navigation{
+	font-family: 'candaraLight';
 	height: fit-content;
 	display: flex;
 	gap: 25px;
